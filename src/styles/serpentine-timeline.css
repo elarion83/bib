@@ -1,0 +1,620 @@
+/**
+ * STYLES TIMELINE SERPENTINE - DESIGN GLASSMORPHISM
+ * 
+ * ARCHITECTURE CSS :
+ * 
+ * 1. CONTENEUR PRINCIPAL (.serpentine-timeline)
+ *    - Fond dégradé diagonal animé (15s)
+ *    - Overflow-x: hidden pour éviter débordement horizontal
+ *    - Hauteur minimale 100vh
+ * 
+ * 2. LIGNE CENTRALE (.serpentine-line)
+ *    - SVG responsive avec animation de dégradé
+ *    - Courbes alternées gauche/droite
+ *    - Ombres portées pour profondeur
+ * 
+ * 3. CARTES TIMELINE (.timeline-content)
+ *    - DÉGRADÉ PERMANENT bleu-blanc-rouge (135°)
+ *    - Glassmorphism : backdrop-filter blur(20px)
+ *    - Alternance gauche/droite avec nth-child
+ *    - Hover : élévation + ombres renforcées
+ * 
+ * 4. CERCLES CENTRAUX (.timeline-circle)
+ *    - Glassmorphism avec bordures semi-transparentes
+ *    - Hover : scale(1.15) avec ombres
+ *    - Positionnement absolu sur la ligne
+ * 
+ * 5. TYPOGRAPHIE
+ *    - Dates : jaune (#fbbf24) avec text-shadow
+ *    - Titres : blanc gras avec letter-spacing
+ *    - Montants : dégradé jaune avec background-clip
+ * 
+ * 6. BADGES ET TAGS
+ *    - Glassmorphism cohérent
+ *    - Hover effects subtils
+ *    - Couleurs sémantiques pour gravité
+ * 
+ * 7. RESPONSIVE
+ *    - Mobile : cartes empilées, cercles plus petits
+ *    - Breakpoint : 768px
+ * 
+ * 8. ANIMATIONS
+ *    - fadeInUp avec délais échelonnés (0.1s par item)
+ *    - Transitions fluides (0.3s ease)
+ * 
+ * MODIFICATIONS RÉCENTES :
+ * - Dégradé bleu-blanc-rouge permanent sur .timeline-content
+ * - Animation ligne ralentie à 15s (était 6s)
+ * - Suppression overflow-x problématique
+ * - Hover simplifié (plus de background-blend-mode)
+ */
+
+/* Timeline Serpentine - Background avec texture et parallax */
+.serpentine-timeline {
+  min-height: 100vh;
+  background: 
+    /* Texture organique avec formes flottantes */
+    radial-gradient(ellipse at 20% 30%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(147, 51, 234, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 40% 80%, rgba(236, 72, 153, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 20%, rgba(34, 197, 94, 0.08) 0%, transparent 50%),
+    /* Motif de grille subtile */
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    /* Texture de bruit fin */
+    radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    /* Base gradient sombre */
+    linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #475569 75%, #64748b 100%);
+  background-size: 
+    1200px 800px,
+    800px 600px, 
+    600px 400px,
+    400px 300px,
+    100px 100px,
+    100px 100px,
+    40px 40px,
+    60px 60px,
+    100% 100%;
+  background-attachment: fixed;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 60px 20px;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  animation: parallaxFloat 25s ease-in-out infinite;
+}
+
+/* Couche parallax supplémentaire */
+.serpentine-timeline::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(ellipse at 60% 40%, rgba(99, 102, 241, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 30% 70%, rgba(168, 85, 247, 0.06) 0%, transparent 60%);
+  background-size: 800px 600px, 600px 400px;
+  pointer-events: none;
+  z-index: 0;
+  animation: parallaxSlow 30s ease-in-out infinite reverse;
+}
+
+/* Titres */
+.timeline-header {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-main-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.timeline-subtitle {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  color: #cbd5e1;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+/* Container principal - centré avec ligne au milieu */
+.timeline-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Ligne serpentine SVG - CENTRÉE */
+.serpentine-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Éléments de la timeline - TOUS centrés sur la ligne */
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+  z-index: 2;
+  min-height: 120px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-4px);
+}
+
+.timeline-item:hover .timeline-content {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Alternance du contenu gauche/droite */
+.timeline-item:nth-child(odd) {
+  flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Contenu à gauche ou droite - Style Glassmorphism */
+.timeline-content {
+  flex: 1;
+  padding: 32px;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: background 0.5s cubic-bezier(0.4,0.2,0.2,1), box-shadow 0.3s, border 0.3s, transform 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(255, 255, 255, 0.3) 50%, 
+    transparent 100%);
+}
+
+.timeline-content:hover {
+  background: linear-gradient(135deg, rgba(0,85,164,0.32) 0%, rgba(255,255,255,0.22) 50%, rgba(239,65,53,0.32) 100%) !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  text-align: right;
+  margin-right: 30px;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  text-align: left;
+  margin-left: 30px;
+}
+
+/* Cercle CENTRAL sur la ligne - Style Glassmorphism */
+.timeline-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  z-index: 3;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  flex-shrink: 0;
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  margin: 0 20px;
+}
+
+.timeline-circle::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, 
+    rgba(255, 255, 255, 0.1) 0%, 
+    transparent 50%, 
+    rgba(255, 255, 255, 0.05) 100%);
+  z-index: -1;
+}
+
+.timeline-circle:hover {
+  transform: scale(1.15);
+  box-shadow: 
+    0 16px 48px rgba(0, 0, 0, 0.4),
+    inset 0 2px 0 rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Styles du contenu - Typographie moderne */
+.timeline-date {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fbbf24;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  letter-spacing: 0.02em;
+}
+
+.timeline-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 16px;
+  line-height: 1.25;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  letter-spacing: -0.01em;
+}
+
+.timeline-person {
+  font-size: 1.05rem;
+  color: #f1f5f9;
+  margin-bottom: 8px;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+.timeline-details {
+  font-size: 0.95rem;
+  color: #e2e8f0;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+.timeline-amount {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fbbf24;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 8px rgba(251, 191, 36, 0.3);
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.timeline-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+
+.timeline-item:nth-child(odd) .timeline-tags {
+  justify-content: flex-end;
+}
+
+.timeline-item:nth-child(odd) .timeline-badges {
+  justify-content: flex-end;
+}
+
+.timeline-item:nth-child(even) .timeline-badges {
+  justify-content: flex-start;
+}
+
+/* Badges - Style Glassmorphism moderne */
+.severity-badge {
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.severity-badge:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 
+    0 6px 20px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.consequence-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 
+    0 2px 8px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.consequence-badge:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column !important;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .timeline-content {
+    max-width: none;
+    padding: 24px 16px;
+    text-align: center !important;
+    margin: 0 0 20px 0 !important;
+  }
+  
+  .timeline-circle {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+  }
+  
+  .timeline-year {
+    font-size: 2rem;
+  }
+  
+  .timeline-title {
+    font-size: 1.2rem;
+  }
+  
+  .timeline-badges {
+    justify-content: center !important;
+  }
+}
+
+/* Animation d'entrée */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.timeline-item.timeline-fadein {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s cubic-bezier(0.4,0.2,0.2,1), transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+}
+
+.timeline-item.timeline-fadein.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Suppression des animations automatiques qui interfèrent */
+.timeline-item {
+  animation: none;
+}
+
+.timeline-item:nth-child(1) { animation: none; }
+.timeline-item:nth-child(2) { animation: none; }
+.timeline-item:nth-child(3) { animation: none; }
+.timeline-item:nth-child(4) { animation: none; }
+.timeline-item:nth-child(5) { animation: none; }
+.timeline-item:nth-child(6) { animation: none; }
+.timeline-item:nth-child(7) { animation: none; }
+.timeline-item:nth-child(8) { animation: none; }
+.timeline-item:nth-child(9) { animation: none; }
+.timeline-item:nth-child(10) { animation: none; }
+
+/* Tags/Mots-clés */
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0;
+}
+
+.timeline-tag {
+  background: rgba(102, 126, 234, 0.2);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  color: #a5b4fc;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.timeline-tag:hover {
+  background: rgba(102, 126, 234, 0.3);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.timeline-tag-more {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Badge de statut */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid;
+  transition: all 0.3s ease;
+}
+
+.status-badge.resolved {
+  background: rgba(16, 185, 129, 0.2);
+  border-color: rgba(16, 185, 129, 0.4);
+  color: #6ee7b7;
+}
+
+.status-badge.ongoing {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: rgba(239, 68, 68, 0.4);
+  color: #fca5a5;
+}
+
+/* Centrage du premier et dernier élément */
+.timeline-item:first-child,
+.timeline-item:last-child {
+  justify-content: center;
+}
+
+.timeline-item:first-child .timeline-content,
+.timeline-item:last-child .timeline-content {
+  text-align: center !important;
+  margin: 0 !important;
+}
+
+/* Éléments cliquables */
+.person-clickable {
+  color: #60a5fa;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.person-clickable:hover {
+  color: #93c5fd;
+  border-bottom-color: #60a5fa;
+}
+
+/* Animations Parallax */
+@keyframes parallaxFloat {
+  0%, 100% {
+    background-position: 
+      0% 0%,
+      100% 100%, 
+      50% 50%,
+      25% 75%,
+      0% 0%,
+      0% 0%,
+      0% 0%,
+      0% 0%,
+      0% 0%;
+  }
+  25% {
+    background-position: 
+      10% 5%,
+      90% 95%, 
+      60% 40%,
+      35% 65%,
+      5% 5%,
+      5% 5%,
+      2% 2%,
+      3% 3%,
+      0% 0%;
+  }
+  50% {
+    background-position: 
+      20% 10%,
+      80% 90%, 
+      70% 30%,
+      45% 55%,
+      10% 10%,
+      10% 10%,
+      4% 4%,
+      6% 6%,
+      0% 0%;
+  }
+  75% {
+    background-position: 
+      15% 15%,
+      85% 85%, 
+      55% 45%,
+      30% 70%,
+      7% 7%,
+      7% 7%,
+      3% 3%,
+      4% 4%,
+      0% 0%;
+  }
+}
+
+@keyframes parallaxSlow {
+  0%, 100% {
+    background-position: 0% 0%, 100% 100%;
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    background-position: 25% 25%, 75% 75%;
+    transform: translateX(10px) translateY(-5px);
+  }
+  50% {
+    background-position: 50% 50%, 50% 50%;
+    transform: translateX(-5px) translateY(10px);
+  }
+  75% {
+    background-position: 75% 25%, 25% 75%;
+    transform: translateX(-10px) translateY(-5px);
+  }
+} 

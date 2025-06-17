@@ -1,0 +1,224 @@
+/* Popup de confirmation pour les filtres de personne */
+.person-filter-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: personFilterFadeIn 0.3s ease-out;
+}
+
+.person-filter-modal {
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.95), rgba(124, 58, 237, 0.95));
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  max-width: 450px;
+  width: 90%;
+  max-height: 90vh;
+  overflow: hidden;
+  animation: personFilterSlideIn 0.3s ease-out;
+}
+
+.person-filter-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.person-filter-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
+}
+
+.person-filter-title {
+  flex: 1;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.person-filter-close {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.person-filter-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.person-filter-body {
+  padding: 24px;
+  text-align: center;
+}
+
+.person-filter-message {
+  color: #e2e8f0;
+  font-size: 1rem;
+  margin: 0 0 16px 0;
+  line-height: 1.5;
+}
+
+.person-filter-name {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 16px;
+  margin: 16px 0;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.person-filter-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  margin: 16px 0 0 0;
+}
+
+.person-filter-actions {
+  display: flex;
+  gap: 12px;
+  padding: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.person-filter-btn {
+  flex: 1;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid;
+}
+
+.person-filter-cancel {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.person-filter-cancel:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.person-filter-confirm {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  border-color: #3b82f6;
+  color: white;
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
+}
+
+.person-filter-confirm:hover {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
+/* Animations */
+@keyframes personFilterFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes personFilterSlideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .person-filter-modal {
+    margin: 20px;
+    width: calc(100% - 40px);
+  }
+  
+  .person-filter-header {
+    padding: 20px;
+  }
+  
+  .person-filter-body {
+    padding: 20px;
+  }
+  
+  .person-filter-actions {
+    padding: 20px;
+    flex-direction: column;
+  }
+  
+  .person-filter-btn {
+    width: 100%;
+  }
+}
+
+.person-filter-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 18px 0 10px 0;
+  font-size: 1rem;
+  color: #e2e8f0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.person-filter-checkbox-label input[type="checkbox"] {
+  accent-color: #3b82f6;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 2px solid #64748b;
+  background: rgba(255,255,255,0.08);
+  transition: box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(59,130,246,0.08);
+}
+
+.person-filter-checkbox-label input[type="checkbox"]:focus {
+  outline: 2px solid #3b82f6;
+} 
