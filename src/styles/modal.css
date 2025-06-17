@@ -189,9 +189,16 @@
 /* Grille d'informations */
 .modal-info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
   gap: 24px;
   margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .modal-info-grid {
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    gap: 24px;
+  }
 }
 
 .modal-info-card {
