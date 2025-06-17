@@ -659,4 +659,16 @@
 .timeline-event-point:hover {
   box-shadow: 0 8px 32px 0 rgba(0,0,0,0.22), 0 0 0 10px rgba(255,255,255,0.22);
   filter: brightness(1.08) saturate(1.1);
+}
+
+@keyframes timelinePulse {
+  0% { transform: translateX(-50%) scale(1); box-shadow: 0 4px 18px 0 rgba(0,0,0,0.13), 0 0 0 4px rgba(255,255,255,0.13); }
+  50% { transform: translateX(-50%) scale(1.09); box-shadow: 0 6px 22px 0 rgba(0,0,0,0.16), 0 0 0 8px rgba(255,255,255,0.15); }
+  100% { transform: translateX(-50%) scale(1); box-shadow: 0 4px 18px 0 rgba(0,0,0,0.13), 0 0 0 4px rgba(255,255,255,0.13); }
+}
+
+.timeline-item:hover .timeline-event-point {
+  animation: timelinePulse 1.2s cubic-bezier(0.4,0.2,0.2,1) infinite;
+  filter: brightness(1.08) saturate(1.08);
+  z-index: 3;
 } 
