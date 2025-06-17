@@ -45,6 +45,7 @@
   justify-content: space-between;
   padding: 24px 32px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, rgba(0,85,164,0.32) 0%, rgba(255,255,255,0.22) 50%, rgba(239,65,53,0.32) 100%) !important;
 }
 
 .onboarding-title {
@@ -93,6 +94,7 @@
   color: #e2e8f0;
   font-size: 1.1rem;
   line-height: 1.6;
+  margin-top: 0;
   margin-bottom: 32px;
   text-align: center;
   opacity: 0.9;
@@ -130,6 +132,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.feature-content {
+  text-align: left;
 }
 
 .feature-content h3 {

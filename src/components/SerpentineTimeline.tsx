@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { PoliticalScandal } from '../types/scandal';
 import { formatDate } from '../utils/formatters';
 import ScandalModal from './ScandalModal';
 import PersonFilterConfirmation from './PersonFilterConfirmation';
+import OnboardingModal from './OnboardingModal';
 import '../styles/serpentine-timeline.css';
 import '../styles/modal.css';
 import '../styles/person-filter.css';
@@ -26,6 +27,18 @@ const SerpentineTimeline: React.FC<SerpentineTimelineProps> = ({
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isPersonFilterOpen, setIsPersonFilterOpen] = useState(false);
   const [selectedPerson, setSelectedPerson] = useState<string>('');
+  const [showOnboarding, setShowOnboarding] = useState(false);
+
+  useEffect(() => {
+    const hasSeenOnboarding = localStorage.getItem('onboarding-seen');
+    if (!hasSeenOnboarding) {
+      setShowOnboarding(true);
+    }
+  }, []);
+
+  const handleCloseOnboarding = () => {
+    setShowOnboarding(false);
+  };
 
   const handleScandalClick = (scandal: PoliticalScandal) => {
     setSelectedScandal(scandal);
@@ -267,6 +280,12 @@ const SerpentineTimeline: React.FC<SerpentineTimelineProps> = ({
         personName={selectedPerson}
         onConfirm={handlePersonFilterConfirm}
         onCancel={handlePersonFilterCancel}
+      />
+
+      {/* Modal d'onboarding */}
+      <OnboardingModal
+        isOpen={showOnboarding}
+        onClose={handleCloseOnboarding}
       />
     </div>
   );

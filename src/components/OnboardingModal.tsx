@@ -53,7 +53,7 @@ const OnboardingModal: React.FC<OnboardingModalProps> = ({ isOpen, onClose }) =>
         <div className="onboarding-header">
           <div className="onboarding-title">
             <Info className="onboarding-icon" />
-            <h2>Bienvenue sur Transparence Politique</h2>
+            <h2>Bienvenue sur la Bibliothèque à Scandales</h2>
           </div>
           <button className="onboarding-close" onClick={onClose}>
             <X size={24} />
