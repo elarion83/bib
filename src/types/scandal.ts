@@ -38,7 +38,7 @@
  */
 
 export interface PoliticalScandal {
-  id: number; // Identifiant unique
+  //id: number; // Identifiant unique
   // Informations temporelles
   date: string; // Date complète ou année
   duration?: string; // Durée du scandale

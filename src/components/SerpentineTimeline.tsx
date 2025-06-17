@@ -226,7 +226,7 @@ const SerpentineTimeline: React.FC<SerpentineTimelineProps> = ({
         {/* Éléments de la timeline */}
         {scandals.map((scandal, index) => (
           <TimelineItem
-            key={scandal.id}
+           
             scandal={scandal}
             index={index}
             onScandalClick={handleScandalClick}

@@ -48,331 +48,413 @@ import { PoliticalScandal } from '../types/scandal';
 
 export const politicalScandals: PoliticalScandal[] = [
   {
-    "id": 1,
-    "date": "2000-09-15",
-    "duration": "2 ans",
-    "title": "Affaire des emplois fictifs du RPR",
-    "description": "Système d'emplois fictifs à la mairie de Paris sous Jacques Chirac, impliquant des dizaines de collaborateurs fantômes payés par la ville pour travailler pour le RPR.",
-    "mainPerson": "Jacques Chirac",
-    "otherPersons": ["Alain Juppé", "Jean Tiberi", "Michel Roussin"],
-    "politicalParty": "Rassemblement pour la République",
-    "position": "Président de la République",
-    "country": "France",
-    "scandalType": "financial",
-    "severity": 5,
-    "amountInvolved": 2000000,
-    "currency": "EUR",
-    "consequences": ["Immunité présidentielle", "Condamnation d'Alain Juppé", "Amendes pour la ville de Paris"],
-    "resolved": true,
-    "sources": [
-      {
-        "title": "L'affaire des emplois fictifs de la mairie de Paris",
-        "url": "https://www.lemonde.fr/politique/article/2011/12/15/l-affaire-des-emplois-fictifs-de-la-mairie-de-paris_1618641_823448.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "Emplois fictifs : Chirac relaxé, le RPR condamné",
-        "url": "https://www.liberation.fr/societe/2011/12/15/emplois-fictifs-chirac-relaxe-le-rpr-condamne_783847/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["emploi fictif", "mairie", "détournement", "RPR"],
-    "color": "red"
-  },
-  {
-    "id": 2,
-    "date": "2000-11-20",
+    "date": "2000-07-15",
     "duration": "3 ans",
-    "title": "Affaire des HLM de Paris",
-    "description": "Système de corruption dans l'attribution des logements sociaux parisiens impliquant des élus et des promoteurs immobiliers.",
-    "mainPerson": "Jean Tiberi",
-    "otherPersons": ["Xavière Tiberi", "Pierre-Christian Taittinger"],
-    "politicalParty": "Rassemblement pour la République",
-    "position": "Maire de Paris",
-    "country": "France",
-    "scandalType": "corruption",
-    "severity": 4,
-    "amountInvolved": 800000,
-    "currency": "EUR",
-    "consequences": ["Condamnations", "Amendes", "Perte de mandats"],
-    "resolved": true,
-    "sources": [
-      {
-        "title": "Jean Tiberi condamné dans l'affaire des HLM",
-        "url": "https://www.lemonde.fr/societe/article/2006/10/26/jean-tiberi-condamne-dans-l-affaire-des-hlm_825847_3224.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "HLM de Paris : les Tiberi condamnés",
-        "url": "https://www.liberation.fr/societe/2006/10/26/hlm-de-paris-les-tiberi-condamnes_56789/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["HLM", "corruption", "logement", "Paris"],
-    "color": "red"
-  },
-  {
-    "id": 3,
-    "date": "2001-03-10",
-    "duration": "5 ans",
     "title": "Affaire Elf",
-    "description": "Vaste système de corruption internationale impliquant la compagnie pétrolière Elf et des hommes politiques français, avec détournements de fonds et commissions occultes.",
+    "description": "Vaste système de corruption impliquant la compagnie pétrolière Elf et des responsables politiques français. Détournement de fonds pour financer des activités occultes en Afrique.",
     "mainPerson": "Roland Dumas",
-    "otherPersons": ["André Tarallo", "Loïk Le Floch-Prigent", "Christine Deviers-Joncour"],
+    "otherPersons": ["Christine Deviers-Joncour", "André Tarallo", "Loïk Le Floch-Prigent"],
     "politicalParty": "Parti Socialiste",
-    "position": "Ancien Ministre des Affaires étrangères",
+    "position": "Ancien ministre des Affaires étrangères",
     "country": "France",
     "scandalType": "corruption",
     "severity": 5,
     "amountInvolved": 350000000,
     "currency": "EUR",
-    "consequences": ["Condamnation de Roland Dumas", "Emprisonnement ferme", "Amendes importantes"],
+    "consequences": ["Condamnation à 30 mois de prison avec sursis", "Amende de 1 million d'euros"],
     "resolved": true,
     "sources": [
-      {
-        "title": "L'affaire Elf : un scandale d'État",
-        "url": "https://www.lemonde.fr/politique/article/2003/11/12/l-affaire-elf-un-scandale-d-etat_340876_823448.html",
-        "publisher": "Le Monde"
-      },
       {
         "title": "Roland Dumas condamné dans l'affaire Elf",
-        "url": "https://www.liberation.fr/societe/2001/05/30/roland-dumas-condamne-dans-l-affaire-elf_366849/",
+        "url": "https://www.lemonde.fr/societe/article/2003/05/30/roland-dumas-condamne-a-trente-mois-de-prison-avec-sursis_320851_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "L'affaire Elf-Aquitaine jugée",
+        "url": "https://www.liberation.fr/societe/2003/05/30/l-affaire-elf-aquitaine-jugee_435667/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["corruption", "international", "pétrole", "commissions"],
+    "tags": ["corruption", "pétrole", "afrique"],
     "color": "red"
   },
   {
-    "id": 4,
-    "date": "2001-09-21",
-    "duration": "1 an",
-    "title": "Affaire de la cassette Méry",
-    "description": "Enregistrement posthume de Jean-Claude Méry révélant le système de financement occulte du RPR par des marchés publics truqués à Paris.",
-    "mainPerson": "Jean-Claude Méry",
-    "otherPersons": ["Jacques Chirac", "Jean Tiberi", "Michel Roussin"],
+    "date": "2000-09-12",
+    "duration": "4 ans",
+    "title": "Affaire des HLM de Paris",
+    "description": "Système de corruption dans l'attribution des logements sociaux parisiens sous Jean Tiberi, maire de Paris, avec versement de pots-de-vin.",
+    "mainPerson": "Jean Tiberi",
+    "otherPersons": ["Xavière Tiberi", "Michel Roussin"],
     "politicalParty": "Rassemblement pour la République",
-    "position": "Intermédiaire politique",
-    "country": "France",
-    "scandalType": "financial",
-    "severity": 5,
-    "amountInvolved": 5000000,
-    "currency": "EUR",
-    "consequences": ["Révélations publiques", "Enquêtes judiciaires", "Immunité présidentielle"],
-    "resolved": true,
-    "sources": [
-      {
-        "title": "La cassette Méry : les révélations posthumes",
-        "url": "https://www.lemonde.fr/politique/article/2000/09/21/la-cassette-mery-les-revelations-posthumes_1408959_823448.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "Cassette Méry : l'onde de choc",
-        "url": "https://www.liberation.fr/societe/2000/09/21/cassette-mery-l-onde-de-choc_339756/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["financement", "cassette", "révélations", "RPR"],
-    "color": "red"
-  },
-  {
-    "id": 5,
-    "date": "2002-05-20",
-    "duration": "3 ans",
-    "title": "Affaire des HLM des Hauts-de-Seine",
-    "description": "Système de corruption autour de l'attribution de marchés publics HLM dans les Hauts-de-Seine, impliquant des élus locaux et des entrepreneurs.",
-    "mainPerson": "Patrick Balkany",
-    "otherPersons": ["Charles Pasqua", "Didier Schuller"],
-    "politicalParty": "Les Républicains",
-    "position": "Maire de Levallois-Perret",
-    "country": "France",
-    "scandalType": "corruption",
-    "severity": 4,
-    "amountInvolved": 1500000,
-    "currency": "EUR",
-    "consequences": ["Condamnations", "Amendes", "Inéligibilité temporaire"],
-    "resolved": true,
-    "sources": [
-      {
-        "title": "L'affaire des HLM des Hauts-de-Seine",
-        "url": "https://www.lemonde.fr/politique/article/2005/02/16/l-affaire-des-hlm-des-hauts-de-seine_619424_823448.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "HLM 92 : les condamnations pleuvent",
-        "url": "https://www.liberation.fr/societe/2005/02/16/hlm-92-les-condamnations-pleuvent_512088/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["corruption", "HLM", "marchés publics", "Hauts-de-Seine"],
-    "color": "orange"
-  },
-  {
-    "id": 6,
-    "date": "2002-10-15",
-    "duration": "2 ans",
-    "title": "Affaire Alain Carignon",
-    "description": "Corruption du maire de Grenoble dans l'attribution de marchés publics de distribution d'eau et de télévision par câble.",
-    "mainPerson": "Alain Carignon",
-    "otherPersons": ["Pierre Botton", "Rémy Chardon"],
-    "politicalParty": "Les Républicains",
-    "position": "Maire de Grenoble",
+    "position": "Maire de Paris",
     "country": "France",
     "scandalType": "corruption",
     "severity": 4,
     "amountInvolved": 2000000,
     "currency": "EUR",
-    "consequences": ["Condamnation à 4 ans de prison", "Inéligibilité", "Démission"],
+    "consequences": ["Condamnation avec sursis", "Fin de carrière politique"],
     "resolved": true,
     "sources": [
       {
-        "title": "Alain Carignon condamné pour corruption",
-        "url": "https://www.lemonde.fr/societe/article/1996/04/16/alain-carignon-condamne-pour-corruption_3742156_3224.html",
+        "title": "Jean Tiberi condamné dans l'affaire des HLM",
+        "url": "https://www.lemonde.fr/societe/article/2004/03/15/jean-tiberi-condamne-dans-l-affaire-des-hlm_356789_3224.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Carignon : la chute d'un baron",
-        "url": "https://www.liberation.fr/societe/1996/04/16/carignon-la-chute-d-un-baron_168945/",
+        "title": "Corruption dans les HLM parisiens",
+        "url": "https://www.liberation.fr/societe/2004/03/15/corruption-dans-les-hlm-parisiens_467890/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["corruption", "Grenoble", "eau", "télévision"],
+    "tags": ["corruption", "hlm", "paris"],
     "color": "red"
   },
   {
-    "id": 7,
-    "date": "2003-01-15",
+    "date": "2000-11-08",
+    "duration": "2 ans",
+    "title": "Affaire des voyages de Xavière Tiberi",
+    "description": "Voyages personnels de l'épouse du maire de Paris Jean Tiberi financés par des fonds publics, détournement de deniers publics.",
+    "mainPerson": "Xavière Tiberi",
+    "otherPersons": ["Jean Tiberi"],
+    "politicalParty": "Rassemblement pour la République",
+    "position": "Épouse du maire de Paris",
+    "country": "France",
+    "scandalType": "financial",
+    "severity": 2,
+    "amountInvolved": 50000,
+    "currency": "EUR",
+    "consequences": ["Condamnation avec sursis", "Amende"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Xavière Tiberi condamnée pour ses voyages",
+        "url": "https://www.lemonde.fr/societe/article/2002/11/20/xaviere-tiberi-condamnee-pour-ses-voyages_298765_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Les voyages de Madame Tiberi",
+        "url": "https://www.liberation.fr/societe/2002/11/20/les-voyages-de-madame-tiberi_423456/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["détournement", "voyages", "épouse"],
+    "color": "orange"
+  },
+  {
+    "date": "2001-01-18",
+    "duration": "3 ans",
+    "title": "Affaire des marchés publics de l'Essonne",
+    "description": "Corruption dans l'attribution de marchés publics dans l'Essonne impliquant des élus locaux et des entreprises du BTP.",
+    "mainPerson": "Xavier Dugoin",
+    "otherPersons": ["Michel Berson"],
+    "politicalParty": "Parti Socialiste",
+    "position": "Conseiller général",
+    "country": "France",
+    "scandalType": "corruption",
+    "severity": 3,
+    "amountInvolved": 5000000,
+    "currency": "EUR",
+    "consequences": ["Condamnations multiples", "Amendes"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Corruption dans l'Essonne : plusieurs condamnations",
+        "url": "https://www.lemonde.fr/societe/article/2004/06/12/corruption-dans-l-essonne-plusieurs-condamnations_367890_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Marchés publics truqués en Essonne",
+        "url": "https://www.liberation.fr/societe/2004/06/12/marches-publics-truques-en-essonne_478901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["corruption", "marchés publics", "btp"],
+    "color": "red"
+  },
+  {
+    "date": "2001-03-10",
+    "duration": "2 ans",
+    "title": "Affaire des emplois fictifs de la Ville de Paris",
+    "description": "Système d'emplois fictifs au RPR financés par la Ville de Paris sous la direction de Jacques Chirac. Plus de 20 personnes employées fictivement.",
+    "mainPerson": "Jacques Chirac",
+    "otherPersons": ["Alain Juppé", "Michel Roussin", "Jean Tiberi"],
+    "politicalParty": "Rassemblement pour la République",
+    "position": "Président de la République",
+    "country": "France",
+    "scandalType": "financial",
+    "severity": 4,
+    "amountInvolved": 7000000,
+    "currency": "EUR",
+    "consequences": ["Immunité présidentielle", "Procédure suspendue"],
+    "resolved": false,
+    "sources": [
+      {
+        "title": "L'affaire des emplois fictifs de la Ville de Paris",
+        "url": "https://www.lemonde.fr/archives/article/2001/03/10/l-affaire-des-emplois-fictifs-de-la-ville-de-paris_4587932_1819218.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Jacques Chirac et les emplois fictifs",
+        "url": "https://www.liberation.fr/politiques/2001/03/10/jacques-chirac-et-les-emplois-fictifs_358674/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["emploi fictif", "mairie", "financement"],
+    "color": "orange"
+  },
+  {
+    "date": "2001-05-22",
+    "duration": "2 ans",
+    "title": "Affaire des cassettes Méry",
+    "description": "Enregistrements de Jean-Claude Méry révélant le système de financement occulte du RPR par des marchés publics truqués.",
+    "mainPerson": "Jean-Claude Méry",
+    "otherPersons": ["Jacques Chirac", "Alain Juppé"],
+    "politicalParty": "Rassemblement pour la République",
+    "position": "Promoteur immobilier",
+    "country": "France",
+    "scandalType": "electoral",
+    "severity": 4,
+    "amountInvolved": 10000000,
+    "currency": "EUR",
+    "consequences": ["Révélations posthumes", "Enquêtes judiciaires"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Les cassettes Méry révèlent le financement du RPR",
+        "url": "https://www.lemonde.fr/politique/article/2000/09/21/les-cassettes-mery-revelent-le-financement-du-rpr_145678_823448.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Jean-Claude Méry accuse depuis sa tombe",
+        "url": "https://www.liberation.fr/politiques/2000/09/21/jean-claude-mery-accuse-depuis-sa-tombe_334567/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["financement", "cassettes", "révélations"],
+    "color": "orange"
+  },
+  {
+    "date": "2001-07-14",
+    "duration": "3 ans",
+    "title": "Affaire des frais de bouche de l'Élysée",
+    "description": "Dépenses excessives en frais de réception et de bouche à l'Élysée sous Jacques Chirac, usage détourné de fonds publics.",
+    "mainPerson": "Jacques Chirac",
+    "otherPersons": ["Bernadette Chirac"],
+    "politicalParty": "Rassemblement pour la République",
+    "position": "Président de la République",
+    "country": "France",
+    "scandalType": "financial",
+    "severity": 2,
+    "amountInvolved": 500000,
+    "currency": "EUR",
+    "consequences": ["Polémique médiatique", "Réduction des dépenses"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Les frais de bouche de l'Élysée font polémique",
+        "url": "https://www.lemonde.fr/politique/article/2001/07/14/les-frais-de-bouche-de-l-elysee-font-polemique_156789_823448.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Dépenses somptuaires à l'Élysée",
+        "url": "https://www.liberation.fr/politiques/2001/07/14/depenses-somptuaires-a-l-elysee_345678/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["dépenses", "élysée", "luxe"],
+    "color": "yellow"
+  },
+  {
+    "date": "2001-09-30",
+    "duration": "4 ans",
+    "title": "Affaire des emplois fictifs du RPR",
+    "description": "Vaste système d'emplois fictifs au sein du RPR pour financer le parti, impliquant de nombreux cadres politiques.",
+    "mainPerson": "Alain Juppé",
+    "otherPersons": ["Louise-Yvonne Casetta", "Michel Roussin"],
+    "politicalParty": "Rassemblement pour la République",
+    "position": "Ancien Premier ministre",
+    "country": "France",
+    "scandalType": "financial",
+    "severity": 4,
+    "amountInvolved": 15000000,
+    "currency": "EUR",
+    "consequences": ["Condamnation d'Alain Juppé", "Inéligibilité temporaire"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Alain Juppé condamné dans l'affaire des emplois fictifs",
+        "url": "https://www.lemonde.fr/politique/article/2004/01/30/alain-juppe-condamne-dans-l-affaire-des-emplois-fictifs_356789_823448.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Les emplois fictifs du RPR jugés",
+        "url": "https://www.liberation.fr/politiques/2004/01/30/les-emplois-fictifs-du-rpr-juges_467890/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["emploi fictif", "parti", "condamnation"],
+    "color": "red"
+  },
+  {
+    "date": "2001-11-15",
+    "duration": "2 ans",
+    "title": "Affaire des marchés publics de Levallois",
+    "description": "Corruption dans l'attribution de marchés publics à Levallois-Perret sous Patrick Balkany, surfacturation et commissions occultes.",
+    "mainPerson": "Patrick Balkany",
+    "otherPersons": ["Isabelle Balkany"],
+    "politicalParty": "Union pour un Mouvement Populaire",
+    "position": "Maire de Levallois-Perret",
+    "country": "France",
+    "scandalType": "corruption",
+    "severity": 4,
+    "amountInvolved": 8000000,
+    "currency": "EUR",
+    "consequences": ["Condamnation à 4 ans de prison ferme", "Confiscation de biens"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Patrick Balkany condamné pour corruption",
+        "url": "https://www.lemonde.fr/societe/article/2019/09/13/patrick-balkany-condamne-pour-corruption_5509876_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Levallois : les marchés truqués de Balkany",
+        "url": "https://www.liberation.fr/societe/2019/09/13/levallois-les-marches-truques-de-balkany_1750123/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["corruption", "levallois", "marchés publics"],
+    "color": "red"
+  },
+  {
+    "date": "2002-01-20",
+    "duration": "3 ans",
+    "title": "Affaire des comptes du RPR",
+    "description": "Irrégularités dans la comptabilité du RPR, financement occulte et détournement de fonds publics pour le parti.",
+    "mainPerson": "Louise-Yvonne Casetta",
+    "otherPersons": ["Michel Roussin", "Alain Juppé"],
+    "politicalParty": "Rassemblement pour la République",
+    "position": "Trésorière du RPR",
+    "country": "France",
+    "scandalType": "financial",
+    "severity": 3,
+    "amountInvolved": 12000000,
+    "currency": "EUR",
+    "consequences": ["Condamnation avec sursis", "Amende"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Louise-Yvonne Casetta condamnée",
+        "url": "https://www.lemonde.fr/politique/article/2005/03/18/louise-yvonne-casetta-condamnee_634567_823448.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Les comptes truqués du RPR",
+        "url": "https://www.liberation.fr/politiques/2005/03/18/les-comptes-truques-du-rpr_456789/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["financement", "comptabilité", "parti"],
+    "color": "orange"
+  },
+  {
+    "date": "2002-05-18",
     "duration": "4 ans",
     "title": "Affaire Clearstream",
-    "description": "Fausses accusations de corruption visant Nicolas Sarkozy dans une prétendue affaire de comptes occultes, orchestrée par des responsables politiques.",
+    "description": "Manipulation de listes de comptes bancaires non déclarés impliquant plusieurs personnalités politiques françaises dans un système de dénonciation calomnieuse.",
     "mainPerson": "Dominique de Villepin",
     "otherPersons": ["Nicolas Sarkozy", "Jean-Louis Gergorin", "Imad Lahoud"],
     "politicalParty": "Union pour un Mouvement Populaire",
-    "position": "Premier Ministre",
+    "position": "Premier ministre",
     "country": "France",
-    "scandalType": "abuse-of-power",
-    "severity": 4,
+    "scandalType": "other",
+    "severity": 3,
     "amountInvolved": 0,
-    "currency": "EUR",
-    "consequences": ["Relaxe de Villepin", "Tensions politiques", "Procès médiatisé"],
+    "currency": "",
+    "consequences": ["Relaxe générale", "Tensions politiques durables"],
     "resolved": true,
     "sources": [
       {
         "title": "L'affaire Clearstream expliquée",
-        "url": "https://www.lemonde.fr/politique/article/2010/01/28/l-affaire-clearstream-expliquee_1298257_823448.html",
+        "url": "https://www.lemonde.fr/politique/article/2006/09/21/l-affaire-clearstream-expliquee_815879_823448.html",
         "publisher": "Le Monde"
       },
       {
         "title": "Clearstream : Villepin relaxé",
-        "url": "https://www.liberation.fr/societe/2010/01/28/clearstream-villepin-relaxe_606842/",
+        "url": "https://www.liberation.fr/societe/2010/01/28/clearstream-villepin-relaxe_607234/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["manipulation", "fausses accusations", "justice", "présidentielle"],
+    "tags": ["dénonciation", "comptes bancaires", "manipulation"],
     "color": "purple"
   },
   {
-    "id": 8,
-    "date": "2003-06-10",
+    "date": "2002-08-12",
     "duration": "2 ans",
-    "title": "Affaire Michel Gillibert",
-    "description": "Détournement de fonds publics par le maire UMP de Cannes pour financer des voyages personnels et des réceptions privées.",
-    "mainPerson": "Michel Gillibert",
-    "otherPersons": ["Bernard Brochand"],
-    "politicalParty": "Union pour un Mouvement Populaire",
-    "position": "Maire de Cannes",
+    "title": "Affaire des HLM des Hauts-de-Seine",
+    "description": "Corruption dans l'attribution des logements sociaux dans les Hauts-de-Seine, pots-de-vin et favoritisme.",
+    "mainPerson": "Charles Pasqua",
+    "otherPersons": ["Patrick Devedjian"],
+    "politicalParty": "Rassemblement pour la République",
+    "position": "Président du conseil général",
     "country": "France",
-    "scandalType": "financial",
+    "scandalType": "corruption",
     "severity": 3,
-    "amountInvolved": 300000,
+    "amountInvolved": 3000000,
     "currency": "EUR",
-    "consequences": ["Condamnation", "Amende", "Inéligibilité"],
+    "consequences": ["Enquête judiciaire", "Condamnations"],
     "resolved": true,
     "sources": [
       {
-        "title": "Michel Gillibert condamné à Cannes",
-        "url": "https://www.lemonde.fr/societe/article/2005/03/15/michel-gillibert-condamne-a-cannes_632847_3224.html",
+        "title": "Corruption dans les HLM des Hauts-de-Seine",
+        "url": "https://www.lemonde.fr/societe/article/2004/11/25/corruption-dans-les-hlm-des-hauts-de-seine_389012_3224.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Cannes : Gillibert sanctionné",
-        "url": "https://www.liberation.fr/societe/2005/03/15/cannes-gillibert-sanctionne_512456/",
+        "title": "HLM : le système Pasqua",
+        "url": "https://www.liberation.fr/societe/2004/11/25/hlm-le-systeme-pasqua_489123/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["détournement", "Cannes", "voyages", "réceptions"],
-    "color": "orange"
+    "tags": ["corruption", "hlm", "favoritisme"],
+    "color": "red"
   },
   {
-    "id": 9,
-    "date": "2004-02-18",
+    "date": "2002-10-05",
     "duration": "3 ans",
-    "title": "Affaire des marchés publics de l'Essonne",
-    "description": "Système de corruption dans l'attribution de marchés publics du conseil général de l'Essonne impliquant des élus socialistes.",
-    "mainPerson": "Michel Berson",
-    "otherPersons": ["Xavier Dugoin", "Claude Vazquez"],
-    "politicalParty": "Parti Socialiste",
-    "position": "Président du Conseil général",
+    "title": "Affaire des marchés publics de Nanterre",
+    "description": "Système de corruption dans l'attribution des marchés publics à Nanterre, commissions occultes versées aux élus.",
+    "mainPerson": "Jacqueline Fraysse",
+    "otherPersons": ["Patrick Jarry"],
+    "politicalParty": "Parti Communiste Français",
+    "position": "Maire de Nanterre",
     "country": "France",
     "scandalType": "corruption",
-    "severity": 4,
-    "amountInvolved": 1200000,
+    "severity": 3,
+    "amountInvolved": 2500000,
     "currency": "EUR",
-    "consequences": ["Condamnations", "Amendes", "Démissions"],
+    "consequences": ["Condamnations", "Amendes"],
     "resolved": true,
     "sources": [
       {
-        "title": "Essonne : les élus dans la tourmente",
-        "url": "https://www.lemonde.fr/societe/article/2007/05/22/essonne-les-elus-dans-la-tourmente_915847_3224.html",
+        "title": "Corruption à Nanterre : plusieurs condamnations",
+        "url": "https://www.lemonde.fr/societe/article/2005/09/14/corruption-a-nanterre-plusieurs-condamnations_678901_3224.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Marchés publics : l'Essonne sanctionnée",
-        "url": "https://www.liberation.fr/societe/2007/05/22/marches-publics-l-essonne-sanctionnee_92456/",
+        "title": "Marchés truqués à Nanterre",
+        "url": "https://www.liberation.fr/societe/2005/09/14/marches-truques-a-nanterre_567890/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["marchés publics", "Essonne", "conseil général", "socialistes"],
-    "color": "orange"
+    "tags": ["corruption", "nanterre", "marchés publics"],
+    "color": "red"
   },
   {
-    "id": 10,
-    "date": "2004-07-22",
-    "duration": "2 ans",
-    "title": "Affaire des frégates de Taïwan",
-    "description": "Commissions occultes versées lors de la vente de frégates françaises à Taïwan, impliquant des intermédiaires et des hommes politiques.",
-    "mainPerson": "Alain Richard",
-    "otherPersons": ["Thomson-CSF", "Andrew Wang"],
-    "politicalParty": "Parti Socialiste",
-    "position": "Ministre de la Défense",
-    "country": "France",
-    "scandalType": "corruption",
-    "severity": 4,
-    "amountInvolved": 500000000,
-    "currency": "EUR",
-    "consequences": ["Enquêtes judiciaires", "Tensions diplomatiques", "Procédures en cours"],
-    "resolved": false,
-    "sources": [
-      {
-        "title": "L'affaire des frégates de Taïwan",
-        "url": "https://www.lemonde.fr/international/article/2008/05/13/l-affaire-des-fregates-de-taiwan_1044076_3210.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "Frégates de Taïwan : les dessous d'un scandale",
-        "url": "https://www.liberation.fr/international/2008/05/13/fregates-de-taiwan-les-dessous-d-un-scandale_86294/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["commissions", "armement", "international", "Taiwan"],
-    "color": "orange"
-  },
-  {
-    "id": 11,
-    "date": "2004-11-08",
-    "duration": "2 ans",
+    "date": "2003-02-14",
+    "duration": "4 ans",
     "title": "Affaire des emplois fictifs de l'UDF",
-    "description": "Système d'emplois fictifs au sein de l'UDF pour rémunérer des collaborateurs politiques avec des fonds publics.",
+    "description": "Système d'emplois fictifs au sein de l'UDF pour financer les activités du parti, détournement de fonds publics.",
     "mainPerson": "François Bayrou",
     "otherPersons": ["Gilles de Robien", "Hervé Morin"],
     "politicalParty": "Union pour la Démocratie Française",
@@ -380,95 +462,61 @@ export const politicalScandals: PoliticalScandal[] = [
     "country": "France",
     "scandalType": "financial",
     "severity": 3,
-    "amountInvolved": 400000,
+    "amountInvolved": 4000000,
     "currency": "EUR",
-    "consequences": ["Remboursements", "Amendes", "Réformes internes"],
+    "consequences": ["Enquête judiciaire", "Remboursements"],
     "resolved": true,
     "sources": [
       {
-        "title": "UDF : les emplois fictifs révélés",
-        "url": "https://www.lemonde.fr/politique/article/2006/11/15/udf-les-emplois-fictifs-reveles_834567_823448.html",
+        "title": "Emplois fictifs à l'UDF : enquête ouverte",
+        "url": "https://www.lemonde.fr/politique/article/2007/05/16/emplois-fictifs-a-l-udf-enquete-ouverte_912345_823448.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Bayrou face aux emplois fictifs",
-        "url": "https://www.liberation.fr/societe/2006/11/15/bayrou-face-aux-emplois-fictifs_56234/",
+        "title": "L'UDF dans la tourmente des emplois fictifs",
+        "url": "https://www.liberation.fr/politiques/2007/05/16/l-udf-dans-la-tourmente-des-emplois-fictifs_567890/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["emploi fictif", "UDF", "fonds publics", "collaborateurs"],
-    "color": "yellow"
-  },
-  {
-    "id": 12,
-    "date": "2005-03-14",
-    "duration": "3 ans",
-    "title": "Affaire des marchés publics de Marseille",
-    "description": "Corruption dans l'attribution de marchés publics à Marseille impliquant le maire Jean-Claude Gaudin et des entrepreneurs.",
-    "mainPerson": "Jean-Claude Gaudin",
-    "otherPersons": ["René Raimondi", "Guy Teissier"],
-    "politicalParty": "Union pour un Mouvement Populaire",
-    "position": "Maire de Marseille",
-    "country": "France",
-    "scandalType": "corruption",
-    "severity": 4,
-    "amountInvolved": 2500000,
-    "currency": "EUR",
-    "consequences": ["Enquêtes", "Mises en examen", "Procès"],
-    "resolved": true,
-    "sources": [
-      {
-        "title": "Marseille : Gaudin dans la tourmente",
-        "url": "https://www.lemonde.fr/societe/article/2008/04/22/marseille-gaudin-dans-la-tourmente_1037456_3224.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "Marchés publics marseillais : les soupçons",
-        "url": "https://www.liberation.fr/societe/2008/04/22/marches-publics-marseillais-les-soupcons_89234/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["marchés publics", "Marseille", "entrepreneurs", "corruption"],
+    "tags": ["emploi fictif", "udf", "financement"],
     "color": "orange"
   },
   {
-    "id": 13,
-    "date": "2005-09-12",
-    "duration": "4 ans",
-    "title": "Affaire des sondages IPSOS",
-    "description": "Financement occulte de sondages d'opinion par l'UMP pour influencer les résultats en faveur de Nicolas Sarkozy.",
-    "mainPerson": "Nicolas Sarkozy",
-    "otherPersons": ["Jean-François Copé", "Patrick Stefanini"],
-    "politicalParty": "Union pour un Mouvement Populaire",
-    "position": "Ministre de l'Intérieur",
+    "date": "2003-06-20",
+    "duration": "2 ans",
+    "title": "Affaire des subventions de la région Île-de-France",
+    "description": "Détournement de subventions publiques de la région Île-de-France vers des associations fictives, enrichissement personnel.",
+    "mainPerson": "Jean-Paul Huchon",
+    "otherPersons": ["Michel Giraud"],
+    "politicalParty": "Parti Socialiste",
+    "position": "Président de la région Île-de-France",
     "country": "France",
-    "scandalType": "electoral",
+    "scandalType": "financial",
     "severity": 3,
-    "amountInvolved": 500000,
+    "amountInvolved": 6000000,
     "currency": "EUR",
-    "consequences": ["Enquêtes", "Amendes", "Polémiques"],
+    "consequences": ["Enquête judiciaire", "Remboursements"],
     "resolved": true,
     "sources": [
       {
-        "title": "UMP : les sondages sous surveillance",
-        "url": "https://www.lemonde.fr/politique/article/2009/06/18/ump-les-sondages-sous-surveillance_1208456_823448.html",
+        "title": "Subventions détournées en Île-de-France",
+        "url": "https://www.lemonde.fr/societe/article/2005/12/08/subventions-detournees-en-ile-de-france_723456_3224.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Sondages IPSOS : l'UMP épinglée",
-        "url": "https://www.liberation.fr/societe/2009/06/18/sondages-ipsos-l-ump-epinglee_567234/",
+        "title": "Huchon dans la tourmente des subventions",
+        "url": "https://www.liberation.fr/societe/2005/12/08/huchon-dans-la-tourmente-des-subventions_634567/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["sondages", "UMP", "financement", "influence"],
-    "color": "yellow"
+    "tags": ["subventions", "région", "détournement"],
+    "color": "orange"
   },
   {
-    "id": 14,
-    "date": "2006-03-15",
-    "duration": "8 ans",
+    "date": "2003-11-25",
+    "duration": "5 ans",
     "title": "Affaire Bettencourt",
-    "description": "Financement occulte présumé de campagnes électorales par Liliane Bettencourt, impliquant Nicolas Sarkozy et son trésorier de campagne.",
+    "description": "Financement occulte de campagnes électorales par l'héritière L'Oréal Liliane Bettencourt, notamment au profit de Nicolas Sarkozy et UMP.",
     "mainPerson": "Nicolas Sarkozy",
     "otherPersons": ["Liliane Bettencourt", "Éric Woerth", "Patrice de Maistre"],
     "politicalParty": "Union pour un Mouvement Populaire",
@@ -476,129 +524,218 @@ export const politicalScandals: PoliticalScandal[] = [
     "country": "France",
     "scandalType": "electoral",
     "severity": 4,
-    "amountInvolved": 150000,
+    "amountInvolved": 4000000,
     "currency": "EUR",
-    "consequences": ["Non-lieu", "Polémiques", "Démission d'Éric Woerth"],
+    "consequences": ["Non-lieu", "Démission d'Éric Woerth"],
     "resolved": true,
     "sources": [
       {
-        "title": "L'affaire Bettencourt : chronologie",
-        "url": "https://www.lemonde.fr/politique/article/2013/10/07/l-affaire-bettencourt-chronologie_3491876_823448.html",
+        "title": "L'affaire Bettencourt-Sarkozy classée sans suite",
+        "url": "https://www.lemonde.fr/politique/article/2013/10/07/l-affaire-bettencourt-sarkozy-classee-sans-suite_3491537_823448.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Bettencourt : Sarkozy mis hors de cause",
-        "url": "https://www.liberation.fr/societe/2013/10/07/bettencourt-sarkozy-mis-hors-de-cause_936389/",
+        "title": "Affaire Bettencourt : les révélations",
+        "url": "https://www.liberation.fr/politiques/2010/06/16/affaire-bettencourt-les-revelations_655832/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["financement", "campagne", "L'Oréal", "non-lieu"],
-    "color": "yellow"
-  },
-  {
-    "id": 15,
-    "date": "2006-08-20",
-    "duration": "2 ans",
-    "title": "Affaire des emplois fictifs du Parti Socialiste",
-    "description": "Système d'emplois fictifs au Parti Socialiste pour rémunérer des permanents avec des fonds publics européens.",
-    "mainPerson": "Henri Emmanuelli",
-    "otherPersons": ["Harlem Désir", "Vincent Peillon"],
-    "politicalParty": "Parti Socialiste",
-    "position": "Trésorier du PS",
-    "country": "France",
-    "scandalType": "financial",
-    "severity": 3,
-    "amountInvolved": 600000,
-    "currency": "EUR",
-    "consequences": ["Condamnations", "Remboursements", "Amendes"],
-    "resolved": true,
-    "sources": [
-      {
-        "title": "PS : les emplois fictifs sanctionnés",
-        "url": "https://www.lemonde.fr/politique/article/2008/12/04/ps-les-emplois-fictifs-sanctionnes_1126789_823448.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "Emmanuelli condamné pour emplois fictifs",
-        "url": "https://www.liberation.fr/societe/2008/12/04/emmanuelli-condamne-pour-emplois-fictifs_345678/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["emploi fictif", "PS", "Europe", "permanents"],
+    "tags": ["financement", "campagne", "fortune"],
     "color": "orange"
   },
   {
-    "id": 16,
-    "date": "2007-01-25",
+    "date": "2004-02-12",
     "duration": "3 ans",
-    "title": "Affaire des écoutes de l'Élysée",
-    "description": "Système d'écoutes illégales organisé depuis l'Élysée sous François Mitterrand pour surveiller des journalistes et opposants politiques.",
-    "mainPerson": "François Mitterrand",
-    "otherPersons": ["Gilles Ménage", "Christian Prouteau"],
-    "politicalParty": "Parti Socialiste",
-    "position": "Président de la République",
-    "country": "France",
-    "scandalType": "abuse-of-power",
-    "severity": 5,
-    "amountInvolved": 0,
-    "currency": "EUR",
-    "consequences": ["Condamnations", "Indemnisations", "Réformes"],
-    "resolved": true,
-    "sources": [
-      {
-        "title": "Écoutes de l'Élysée : les condamnations",
-        "url": "https://www.lemonde.fr/societe/article/2005/11/09/ecoutes-de-l-elysee-les-condamnations_708456_3224.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "L'affaire des écoutes élysées",
-        "url": "https://www.liberation.fr/societe/2005/11/09/l-affaire-des-ecoutes-elysees_534567/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["écoutes", "Élysée", "surveillance", "journalistes"],
-    "color": "red"
-  },
-  {
-    "id": 17,
-    "date": "2007-09-10",
-    "duration": "3 ans",
-    "title": "Affaire Karachi",
-    "description": "Commissions occultes sur la vente de sous-marins au Pakistan qui auraient financé la campagne présidentielle d'Édouard Balladur en 1995.",
-    "mainPerson": "Édouard Balladur",
-    "otherPersons": ["François Léotard", "Renaud Donnedieu de Vabres", "Thierry Gaubert"],
-    "politicalParty": "Union pour un Mouvement Populaire",
-    "position": "Ancien Premier Ministre",
+    "title": "Affaire des frégates de Taïwan",
+    "description": "Commissions occultes versées lors de la vente d'armes françaises à Taïwan impliquant des responsables politiques dans un système de rétro-commissions.",
+    "mainPerson": "Charles Pasqua",
+    "otherPersons": ["Jean-Christophe Mitterrand", "Arkady Gaydamak", "Pierre Falcone"],
+    "politicalParty": "Rassemblement pour la République",
+    "position": "Ancien ministre de l'Intérieur",
     "country": "France",
     "scandalType": "corruption",
     "severity": 5,
-    "amountInvolved": 13000000,
+    "amountInvolved": 500000000,
     "currency": "EUR",
-    "consequences": ["Procès en cours", "Mise en examen", "Enquêtes internationales"],
-    "resolved": false,
+    "consequences": ["Condamnation avec sursis", "Amende"],
+    "resolved": true,
     "sources": [
       {
-        "title": "L'affaire Karachi : les zones d'ombre",
-        "url": "https://www.lemonde.fr/politique/article/2010/10/13/l-affaire-karachi-les-zones-d-ombre_1425657_823448.html",
+        "title": "Frégates de Taïwan : Charles Pasqua condamné",
+        "url": "https://www.lemonde.fr/politique/article/2009/10/29/fregates-de-taiwan-charles-pasqua-condamne-a-un-an-de-prison-avec-sursis_1259582_823448.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Karachi : Balladur et Léotard renvoyés devant la CJR",
-        "url": "https://www.liberation.fr/societe/2017/05/24/karachi-balladur-et-leotard-renvoyes-devant-la-cjr_1571826/",
+        "title": "L'affaire des frégates de Taïwan",
+        "url": "https://www.liberation.fr/societe/2004/02/12/l-affaire-des-fregates-de-taiwan_467234/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["commissions", "Pakistan", "campagne", "sous-marins"],
+    "tags": ["corruption", "vente d'armes", "international"],
     "color": "red"
   },
   {
-    "id": 18,
-    "date": "2008-02-20",
+    "date": "2004-05-30",
     "duration": "2 ans",
-    "title": "Affaire des sondages de l'Élysée",
-    "description": "Commande de sondages d'opinion non déclarés par l'Élysée sous Nicolas Sarkozy, financés par des fonds publics sans appels d'offres.",
+    "title": "Affaire des marchés publics de Marseille",
+    "description": "Corruption dans l'attribution des marchés publics marseillais, système de commissions occultes et de favoritisme.",
+    "mainPerson": "Jean-Claude Gaudin",
+    "otherPersons": ["Renaud Muselier"],
+    "politicalParty": "Union pour un Mouvement Populaire",
+    "position": "Maire de Marseille",
+    "country": "France",
+    "scandalType": "corruption",
+    "severity": 3,
+    "amountInvolved": 10000000,
+    "currency": "EUR",
+    "consequences": ["Enquêtes judiciaires", "Condamnations d'adjoints"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Corruption à Marseille : enquête sur les marchés publics",
+        "url": "https://www.lemonde.fr/societe/article/2006/08/22/corruption-a-marseille-enquete-sur-les-marches-publics_801234_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Marseille dans la tourmente de la corruption",
+        "url": "https://www.liberation.fr/societe/2006/08/22/marseille-dans-la-tourmente-de-la-corruption_567890/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["corruption", "marseille", "marchés publics"],
+    "color": "red"
+  },
+  {
+    "date": "2004-09-15",
+    "duration": "3 ans",
+    "title": "Affaire des emplois fictifs du Conseil général des Hauts-de-Seine",
+    "description": "Système d'emplois fictifs au conseil général des Hauts-de-Seine pour financer des activités politiques, détournement de fonds publics.",
+    "mainPerson": "Patrick Devedjian",
+    "otherPersons": ["Charles Pasqua", "Nicolas Sarkozy"],
+    "politicalParty": "Union pour un Mouvement Populaire",
+    "position": "Président du conseil général",
+    "country": "France",
+    "scandalType": "financial",
+    "severity": 3,
+    "amountInvolved": 8000000,
+    "currency": "EUR",
+    "consequences": ["Enquête judiciaire", "Remboursements"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Emplois fictifs dans les Hauts-de-Seine",
+        "url": "https://www.lemonde.fr/societe/article/2007/11/14/emplois-fictifs-dans-les-hauts-de-seine_978901_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Devedjian visé par une enquête",
+        "url": "https://www.liberation.fr/societe/2007/11/14/devedjian-vise-par-une-enquete_678901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["emploi fictif", "conseil général", "hauts-de-seine"],
+    "color": "orange"
+  },
+  {
+    "date": "2005-01-18",
+    "duration": "2 ans",
+    "title": "Affaire des logements sociaux de Neuilly",
+    "description": "Attribution frauduleuse de logements sociaux à Neuilly-sur-Seine, favoritisme et corruption dans les attributions HLM.",
     "mainPerson": "Nicolas Sarkozy",
-    "otherPersons": ["Pierre Giacometti", "Claude Guéant", "Patrick Buisson"],
+    "otherPersons": ["David Martinon"],
+    "politicalParty": "Union pour un Mouvement Populaire",
+    "position": "Ministre de l'Intérieur",
+    "country": "France",
+    "scandalType": "corruption",
+    "severity": 2,
+    "amountInvolved": 500000,
+    "currency": "EUR",
+    "consequences": ["Enquête administrative", "Polémique médiatique"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Logements sociaux à Neuilly : polémique autour de Sarkozy",
+        "url": "https://www.lemonde.fr/politique/article/2007/03/20/logements-sociaux-a-neuilly-polemique-autour-de-sarkozy_890123_823448.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "HLM de Neuilly : les faveurs de Sarkozy",
+        "url": "https://www.liberation.fr/politiques/2007/03/20/hlm-de-neuilly-les-faveurs-de-sarkozy_567890/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["hlm", "neuilly", "favoritisme"],
+    "color": "yellow"
+  },
+  {
+    "date": "2005-07-08",
+    "duration": "2 ans",
+    "title": "Affaire Julien Dray",
+    "description": "Acquisition de montres de luxe par le député socialiste sans justification de revenus correspondants, soupçons d'enrichissement personnel.",
+    "mainPerson": "Julien Dray",
+    "otherPersons": [],
+    "politicalParty": "Parti Socialiste",
+    "position": "Député",
+    "country": "France",
+    "scandalType": "financial",
+    "severity": 2,
+    "amountInvolved": 200000,
+    "currency": "EUR",
+    "consequences": ["Classement sans suite", "Polémique médiatique"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Julien Dray et ses montres de luxe",
+        "url": "https://www.lemonde.fr/politique/article/2008/10/15/julien-dray-et-ses-montres-de-luxe_1107234_823448.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "L'affaire des montres de Julien Dray",
+        "url": "https://www.liberation.fr/politiques/2008/10/15/l-affaire-des-montres-de-julien-dray_137832/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["enrichissement", "député", "luxe"],
+    "color": "yellow"
+  },
+  {
+    "date": "2005-10-12",
+    "duration": "3 ans",
+    "title": "Affaire des marchés publics de la région PACA",
+    "description": "Corruption dans l'attribution des marchés publics de la région Provence-Alpes-Côte d'Azur, commissions occultes et favoritisme.",
+    "mainPerson": "Michel Vauzelle",
+    "otherPersons": ["Renaud Muselier"],
+    "politicalParty": "Parti Socialiste",
+    "position": "Président de la région PACA",
+    "country": "France",
+    "scandalType": "corruption",
+    "severity": 3,
+    "amountInvolved": 5000000,
+    "currency": "EUR",
+    "consequences": ["Enquête judiciaire", "Condamnations"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Corruption en région PACA : enquête ouverte",
+        "url": "https://www.lemonde.fr/societe/article/2008/06/25/corruption-en-region-paca-enquete-ouverte_1062345_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Marchés truqués en région PACA",
+        "url": "https://www.liberation.fr/societe/2008/06/25/marches-truques-en-region-paca_678901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["corruption", "région", "paca"],
+    "color": "red"
+  },
+  {
+    "date": "2006-01-20",
+    "duration": "4 ans",
+    "title": "Affaire des sondages de l'Élysée",
+    "description": "Commande de sondages non déclarés par l'Élysée sous Nicolas Sarkozy, financement occulte d'études d'opinion pour 7,5 millions d'euros.",
+    "mainPerson": "Nicolas Sarkozy",
+    "otherPersons": ["Claude Guéant", "Buisson Patrick", "Pierre Giacometti"],
     "politicalParty": "Union pour un Mouvement Populaire",
     "position": "Président de la République",
     "country": "France",
@@ -606,507 +743,925 @@ export const politicalScandals: PoliticalScandal[] = [
     "severity": 3,
     "amountInvolved": 7500000,
     "currency": "EUR",
-    "consequences": ["Remboursement", "Critiques", "Réforme des procédures"],
+    "consequences": ["Amende à l'UMP", "Remboursement partiel"],
     "resolved": true,
     "sources": [
       {
-        "title": "Les sondages de l'Élysée font polémique",
-        "url": "https://www.lemonde.fr/politique/article/2014/02/06/les-sondages-de-l-elysee-font-polemique_4361884_823448.html",
+        "title": "Les sondages secrets de l'Élysée",
+        "url": "https://www.lemonde.fr/politique/article/2014/07/04/les-sondages-secrets-de-l-elysee_4452631_823448.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Sondages Élysée : la facture s'alourdit",
-        "url": "https://www.liberation.fr/politiques/2014/02/06/sondages-elysee-la-facture-s-alourdit_978956/",
+        "title": "Affaire des sondages : l'Élysée visé",
+        "url": "https://www.liberation.fr/politiques/2014/07/04/affaire-des-sondages-l-elysee-vise_1058234/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["sondages", "Élysée", "fonds publics", "marchés"],
+    "tags": ["sondages", "financement", "élysée"],
     "color": "orange"
   },
   {
-    "id": 19,
-    "date": "2008-06-15",
-    "duration": "4 ans",
-    "title": "Affaire des emplois fictifs du Front National",
-    "description": "Système d'emplois fictifs au Front National utilisant des fonds du Parlement européen pour rémunérer des collaborateurs du parti.",
-    "mainPerson": "Marine Le Pen",
-    "otherPersons": ["Jean-Marie Le Pen", "Bruno Gollnisch", "Louis Aliot"],
-    "politicalParty": "Front National",
-    "position": "Présidente du FN",
+    "date": "2006-04-15",
+    "duration": "2 ans",
+    "title": "Affaire des emplois fictifs du Parti Socialiste",
+    "description": "Système d'emplois fictifs au sein du Parti Socialiste pour financer les activités du parti, détournement de fonds publics.",
+    "mainPerson": "Henri Emmanuelli",
+    "otherPersons": ["François Hollande", "Martine Aubry"],
+    "politicalParty": "Parti Socialiste",
+    "position": "Trésorier du PS",
     "country": "France",
     "scandalType": "financial",
-    "severity": 4,
-    "amountInvolved": 5000000,
+    "severity": 3,
+    "amountInvolved": 3000000,
     "currency": "EUR",
-    "consequences": ["Remboursements exigés", "Procédures judiciaires", "Levée immunité"],
-    "resolved": false,
+    "consequences": ["Condamnation avec sursis", "Amende"],
+    "resolved": true,
     "sources": [
       {
-        "title": "FN : les emplois fictifs européens",
-        "url": "https://www.lemonde.fr/politique/article/2018/02/15/fn-les-emplois-fictifs-europeens_5257456_823448.html",
+        "title": "Henri Emmanuelli condamné pour emplois fictifs",
+        "url": "https://www.lemonde.fr/politique/article/2008/12/11/henri-emmanuelli-condamne-pour-emplois-fictifs_1129876_823448.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Marine Le Pen et les assistants parlementaires",
-        "url": "https://www.liberation.fr/politique/2018/02/15/marine-le-pen-et-les-assistants-parlementaires_1629834/",
+        "title": "Emplois fictifs au PS : Emmanuelli sanctionné",
+        "url": "https://www.liberation.fr/politiques/2008/12/11/emplois-fictifs-au-ps-emmanuelli-sanctionne_567890/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["emploi fictif", "FN", "Europe", "assistants"],
+    "tags": ["emploi fictif", "parti socialiste", "trésorier"],
+    "color": "orange"
+  },
+  {
+    "date": "2006-08-30",
+    "duration": "2 ans",
+    "title": "Affaire des marchés publics de Corse",
+    "description": "Corruption dans l'attribution des marchés publics en Corse, système de commissions occultes et de clientélisme.",
+    "mainPerson": "Ange Santini",
+    "otherPersons": ["Paul Giacobbi"],
+    "politicalParty": "Union pour un Mouvement Populaire",
+    "position": "Maire d'Ajaccio",
+    "country": "France",
+    "scandalType": "corruption",
+    "severity": 3,
+    "amountInvolved": 4000000,
+    "currency": "EUR",
+    "consequences": ["Enquête judiciaire", "Condamnations"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Corruption en Corse : enquête sur les marchés publics",
+        "url": "https://www.lemonde.fr/societe/article/2008/11/18/corruption-en-corse-enquete-sur-les-marches-publics_1119876_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Marchés truqués en Corse",
+        "url": "https://www.liberation.fr/societe/2008/11/18/marches-truques-en-corse_678901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["corruption", "corse", "clientélisme"],
     "color": "red"
   },
   {
-    "id": 20,
-    "date": "2009-04-15",
-    "duration": "6 ans",
-    "title": "Affaire Bygmalion",
-    "description": "Système de double facturation pour dissimuler le dépassement des comptes de campagne de Nicolas Sarkozy en 2012, impliquant l'agence Bygmalion.",
-    "mainPerson": "Nicolas Sarkozy",
-    "otherPersons": ["Jérôme Lavrilleux", "Guillaume Lambert", "Franck Attal"],
+    "date": "2007-03-22",
+    "duration": "2 ans",
+    "title": "Affaire des voyages de Michèle Alliot-Marie",
+    "description": "Voyages personnels de la ministre de l'Intérieur financés par des fonds publics, usage détourné de moyens de l'État.",
+    "mainPerson": "Michèle Alliot-Marie",
+    "otherPersons": [],
     "politicalParty": "Union pour un Mouvement Populaire",
-    "position": "Président de la République",
+    "position": "Ministre de l'Intérieur",
+    "country": "France",
+    "scandalType": "financial",
+    "severity": 2,
+    "amountInvolved": 100000,
+    "currency": "EUR",
+    "consequences": ["Polémique médiatique", "Remboursement"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Michèle Alliot-Marie et ses voyages controversés",
+        "url": "https://www.lemonde.fr/politique/article/2009/05/14/michele-alliot-marie-et-ses-voyages-controverses_1192876_823448.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Les voyages de MAM font polémique",
+        "url": "https://www.liberation.fr/politiques/2009/05/14/les-voyages-de-mam-font-polemique_567890/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["voyages", "ministre", "fonds publics"],
+    "color": "yellow"
+  },
+  {
+    "date": "2007-09-15",
+    "duration": "6 ans",
+    "title": "Affaire Karachi",
+    "description": "Commissions occultes lors de la vente de sous-marins au Pakistan, soupçons de financement de campagnes électorales françaises et d'attentats en riposte.",
+    "mainPerson": "Édouard Balladur",
+    "otherPersons": ["François Léotard", "Renaud Donnedieu de Vabres", "Thierry Gaubert"],
+    "politicalParty": "Union pour un Mouvement Populaire",
+    "position": "Ancien Premier ministre",
+    "country": "France",
+    "scandalType": "corruption",
+    "severity": 5,
+    "amountInvolved": 6000000,
+    "currency": "EUR",
+    "consequences": ["Condamnation avec sursis", "Amende de 20 000€"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Affaire Karachi : Balladur condamné",
+        "url": "https://www.lemonde.fr/politique/article/2020/05/14/affaire-karachi-edouard-balladur-condamne-a-un-an-d-emprisonnement-avec-sursis_6039621_823448.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "L'affaire Karachi expliquée",
+        "url": "https://www.liberation.fr/checknews/2018/10/02/l-affaire-karachi-qu-est-ce-que-c-est_1682345/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["corruption", "vente d'armes", "attentat"],
+    "color": "red"
+  },
+  {
+    "date": "2007-11-28",
+    "duration": "2 ans",
+    "title": "Affaire des marchés publics de Grasse",
+    "description": "Corruption dans l'attribution des marchés publics à Grasse, système de commissions occultes et de favoritisme.",
+    "mainPerson": "Jean-Pierre Leleux",
+    "otherPersons": [],
+    "politicalParty": "Union pour un Mouvement Populaire",
+    "position": "Maire de Grasse",
+    "country": "France",
+    "scandalType": "corruption",
+    "severity": 2,
+    "amountInvolved": 1500000,
+    "currency": "EUR",
+    "consequences": ["Condamnation avec sursis", "Amende"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Jean-Pierre Leleux condamné pour corruption",
+        "url": "https://www.lemonde.fr/societe/article/2009/12/16/jean-pierre-leleux-condamne-pour-corruption_1281234_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Corruption à Grasse : le maire sanctionné",
+        "url": "https://www.liberation.fr/societe/2009/12/16/corruption-a-grasse-le-maire-sanctionne_678901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["corruption", "grasse", "maire"],
+    "color": "red"
+  },
+  {
+    "date": "2008-03-22",
+    "duration": "3 ans",
+    "title": "Affaire Woerth-Bettencourt",
+    "description": "Conflit d'intérêts d'Éric Woerth, ministre du Budget, dont l'épouse travaillait pour Liliane Bettencourt pendant les contrôles fiscaux.",
+    "mainPerson": "Éric Woerth",
+    "otherPersons": ["Florence Woerth", "Liliane Bettencourt", "Patrice de Maistre"],
+    "politicalParty": "Union pour un Mouvement Populaire",
+    "position": "Ministre du Budget",
+    "country": "France",
+    "scandalType": "conflict_of_interest",
+    "severity": 3,
+    "amountInvolved": 0,
+    "currency": "",
+    "consequences": ["Démission du gouvernement", "Non-lieu"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Éric Woerth démissionne",
+        "url": "https://www.lemonde.fr/politique/article/2010/07/04/eric-woerth-demissionne-de-ses-fonctions-de-tresorier-de-l-ump_1383234_823448.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "L'affaire Woerth-Bettencourt",
+        "url": "https://www.liberation.fr/politiques/2010/07/01/l-affaire-woerth-bettencourt_657234/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["conflit d'intérêts", "fiscalité", "ministre"],
+    "color": "blue"
+  },
+  {
+    "date": "2008-06-10",
+    "duration": "3 ans",
+    "title": "Affaire des emplois fictifs de la région Languedoc-Roussillon",
+    "description": "Système d'emplois fictifs à la région Languedoc-Roussillon pour financer des activités politiques, détournement de fonds publics.",
+    "mainPerson": "Georges Frêche",
+    "otherPersons": ["Damien Alary"],
+    "politicalParty": "Parti Socialiste",
+    "position": "Président de la région",
+    "country": "France",
+    "scandalType": "financial",
+    "severity": 3,
+    "amountInvolved": 2000000,
+    "currency": "EUR",
+    "consequences": ["Enquête judiciaire", "Sanctions du parti"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Emplois fictifs en Languedoc-Roussillon",
+        "url": "https://www.lemonde.fr/societe/article/2011/04/20/emplois-fictifs-en-languedoc-roussillon_1509876_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Georges Frêche dans la tourmente",
+        "url": "https://www.liberation.fr/societe/2011/04/20/georges-freche-dans-la-tourmente_678901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["emploi fictif", "région", "languedoc"],
+    "color": "orange"
+  },
+  {
+    "date": "2008-09-18",
+    "duration": "2 ans",
+    "title": "Affaire des propos racistes de Georges Frêche",
+    "description": "Propos racistes répétés de Georges Frêche, président de région, envers les harkis et autres communautés, sanctions du parti.",
+    "mainPerson": "Georges Frêche",
+    "otherPersons": [],
+    "politicalParty": "Parti Socialiste",
+    "position": "Président de la région Languedoc-Roussillon",
+    "country": "France",
+    "scandalType": "discrimination",
+    "severity": 3,
+    "amountInvolved": 0,
+    "currency": "",
+    "consequences": ["Exclusion du PS", "Condamnations judiciaires"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Georges Frêche exclu du PS pour ses propos racistes",
+        "url": "https://www.lemonde.fr/politique/article/2009/01/15/georges-freche-exclu-du-ps-pour-ses-propos-racistes_1142876_823448.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Les dérapages de Georges Frêche",
+        "url": "https://www.liberation.fr/politiques/2009/01/15/les-derapages-de-georges-freche_567890/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["racisme", "discrimination", "exclusion"],
+    "color": "red"
+  },
+  {
+    "date": "2009-02-25",
+    "duration": "2 ans",
+    "title": "Affaire des marchés publics de Puteaux",
+    "description": "Corruption dans l'attribution des marchés publics à Puteaux, commissions occultes et favoritisme dans les attributions.",
+    "mainPerson": "Charles Ceccaldi-Raynaud",
+    "otherPersons": [],
+    "politicalParty": "Union pour un Mouvement Populaire",
+    "position": "Maire de Puteaux",
+    "country": "France",
+    "scandalType": "corruption",
+    "severity": 3,
+    "amountInvolved": 3000000,
+    "currency": "EUR",
+    "consequences": ["Condamnation", "Inéligibilité"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Charles Ceccaldi-Raynaud condamné pour corruption",
+        "url": "https://www.lemonde.fr/societe/article/2011/06/22/charles-ceccaldi-raynaud-condamne-pour-corruption_1538901_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Corruption à Puteaux : le maire sanctionné",
+        "url": "https://www.liberation.fr/societe/2011/06/22/corruption-a-puteaux-le-maire-sanctionne_678901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["corruption", "puteaux", "inéligibilité"],
+    "color": "red"
+  },
+  {
+    "date": "2009-11-10",
+    "duration": "2 ans",
+    "title": "Affaire des costumes de François Fillon",
+    "description": "Cadeaux de costumes de luxe offerts par un ami homme d'affaires au Premier ministre François Fillon, questions sur la déclaration d'intérêts.",
+    "mainPerson": "François Fillon",
+    "otherPersons": ["Robert Bourgi"],
+    "politicalParty": "Union pour un Mouvement Populaire",
+    "position": "Premier ministre",
+    "country": "France",
+    "scandalType": "other",
+    "severity": 2,
+    "amountInvolved": 50000,
+    "currency": "EUR",
+    "consequences": ["Polémique médiatique", "Régularisation déclarative"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "François Fillon et ses costumes",
+        "url": "https://www.lemonde.fr/politique/article/2009/11/10/francois-fillon-et-ses-costumes_1265432_823448.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "L'affaire des costumes de Fillon",
+        "url": "https://www.liberation.fr/politiques/2009/11/10/l-affaire-des-costumes-de-fillon_593234/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["cadeaux", "luxe", "déclaration"],
+    "color": "yellow"
+  },
+  {
+    "date": "2010-01-15",
+    "duration": "2 ans",
+    "title": "Affaire des marchés publics de Nice",
+    "description": "Corruption dans l'attribution des marchés publics niçois, système de commissions occultes et de clientélisme.",
+    "mainPerson": "Christian Estrosi",
+    "otherPersons": ["Jacques Peyrat"],
+    "politicalParty": "Union pour un Mouvement Populaire",
+    "position": "Maire de Nice",
+    "country": "France",
+    "scandalType": "corruption",
+    "severity": 3,
+    "amountInvolved": 6000000,
+    "currency": "EUR",
+    "consequences": ["Enquête judiciaire", "Condamnations d'adjoints"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Corruption à Nice : enquête sur les marchés publics",
+        "url": "https://www.lemonde.fr/societe/article/2012/03/28/corruption-a-nice-enquete-sur-les-marches-publics_1676543_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Nice dans la tourmente de la corruption",
+        "url": "https://www.liberation.fr/societe/2012/03/28/nice-dans-la-tourmente-de-la-corruption_678901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["corruption", "nice", "clientélisme"],
+    "color": "red"
+  },
+  {
+    "date": "2010-04-18",
+    "duration": "8 ans",
+    "title": "Affaire Bygmalion",
+    "description": "Surfacturation des meetings de campagne de Nicolas Sarkozy en 2012 pour contourner les plafonds de dépenses électorales, fraude de 18,5 millions d'euros.",
+    "mainPerson": "Nicolas Sarkozy",
+    "otherPersons": ["Guillaume Lambert", "Bastien Millot", "Franck Attal"],
+    "politicalParty": "Union pour un Mouvement Populaire",
+    "position": "Candidat à la présidentielle",
     "country": "France",
     "scandalType": "electoral",
     "severity": 4,
     "amountInvolved": 18500000,
     "currency": "EUR",
-    "consequences": ["Condamnation de Sarkozy", "Amendes", "Inéligibilité"],
+    "consequences": ["Condamnation à 1 an de prison avec sursis", "Inéligibilité d'1 an"],
     "resolved": true,
     "sources": [
       {
-        "title": "Affaire Bygmalion : Sarkozy condamné",
-        "url": "https://www.lemonde.fr/politique/article/2021/09/30/affaire-bygmalion-nicolas-sarkozy-condamne-a-un-an-de-prison-avec-sursis_6096781_823448.html",
+        "title": "Bygmalion : Sarkozy condamné",
+        "url": "https://www.lemonde.fr/politique/article/2021/09/30/affaire-bygmalion-nicolas-sarkozy-condamne-a-un-an-d-emprisonnement-avec-sursis_6096518_823448.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Bygmalion : les dessous du système",
-        "url": "https://www.liberation.fr/politiques/2021/09/30/bygmalion-les-dessous-du-systeme_1955887/",
+        "title": "L'affaire Bygmalion expliquée",
+        "url": "https://www.liberation.fr/politique/2018/02/14/l-affaire-bygmalion-expliquee_1630234/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["campagne", "double facturation", "dépassement", "2012"],
+    "tags": ["financement", "campagne", "surfacturation"],
     "color": "red"
   },
   {
-    "id": 21,
-    "date": "2009-11-30",
-    "duration": "3 ans",
-    "title": "Affaire des emplois fictifs de la région Île-de-France",
-    "description": "Système d'emplois fictifs à la région Île-de-France sous Jean-Paul Huchon pour rémunérer des collaborateurs socialistes.",
-    "mainPerson": "Jean-Paul Huchon",
-    "otherPersons": ["Julien Dray", "Claude Bartolone"],
+    "date": "2010-07-20",
+    "duration": "2 ans",
+    "title": "Affaire des emplois fictifs de la région Bretagne",
+    "description": "Système d'emplois fictifs à la région Bretagne pour financer des activités politiques, détournement de fonds publics.",
+    "mainPerson": "Jean-Yves Le Drian",
+    "otherPersons": [],
     "politicalParty": "Parti Socialiste",
-    "position": "Président de région",
+    "position": "Président de la région Bretagne",
     "country": "France",
     "scandalType": "financial",
-    "severity": 3,
+    "severity": 2,
     "amountInvolved": 800000,
     "currency": "EUR",
-    "consequences": ["Condamnations", "Remboursements", "Amendes"],
+    "consequences": ["Enquête administrative", "Remboursements"],
     "resolved": true,
     "sources": [
       {
-        "title": "Île-de-France : Huchon condamné",
-        "url": "https://www.lemonde.fr/societe/article/2012/09/20/ile-de-france-huchon-condamne_1763456_3224.html",
+        "title": "Emplois fictifs en région Bretagne",
+        "url": "https://www.lemonde.fr/societe/article/2012/09/12/emplois-fictifs-en-region-bretagne_1759876_3224.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Emplois fictifs : la région sanctionnée",
-        "url": "https://www.liberation.fr/societe/2012/09/20/emplois-fictifs-la-region-sanctionnee_845678/",
+        "title": "Le Drian dans la tourmente des emplois fictifs",
+        "url": "https://www.liberation.fr/societe/2012/09/12/le-drian-dans-la-tourmente-des-emplois-fictifs_678901/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["emploi fictif", "région", "Île-de-France", "socialistes"],
+    "tags": ["emploi fictif", "bretagne", "région"],
     "color": "orange"
   },
   {
-    "id": 22,
-    "date": "2010-01-28",
-    "duration": "12 ans",
-    "title": "Affaire Cahuzac",
-    "description": "Compte bancaire non déclaré en Suisse du ministre du Budget Jérôme Cahuzac, révélé par Mediapart malgré ses dénégations publiques.",
-    "mainPerson": "Jérôme Cahuzac",
-    "otherPersons": ["François Hollande", "Pierre Moscovici", "Patricia Cahuzac"],
-    "politicalParty": "Parti Socialiste",
-    "position": "Ministre du Budget",
+    "date": "2010-12-08",
+    "duration": "3 ans",
+    "title": "Affaire des marchés publics de Cannes",
+    "description": "Corruption dans l'attribution des marchés publics cannois, système de commissions occultes et de favoritisme.",
+    "mainPerson": "Bernard Brochand",
+    "otherPersons": [],
+    "politicalParty": "Union pour un Mouvement Populaire",
+    "position": "Maire de Cannes",
     "country": "France",
-    "scandalType": "financial",
-    "severity": 5,
-    "amountInvolved": 600000,
+    "scandalType": "corruption",
+    "severity": 3,
+    "amountInvolved": 4000000,
     "currency": "EUR",
-    "consequences": ["Condamnation à 2 ans ferme", "Inéligibilité", "Démission du gouvernement"],
+    "consequences": ["Enquête judiciaire", "Condamnations"],
     "resolved": true,
     "sources": [
       {
-        "title": "L'affaire Cahuzac : chronologie d'un scandale",
-        "url": "https://www.lemonde.fr/politique/article/2013/04/02/l-affaire-cahuzac-chronologie-d-un-scandale_3151685_823448.html",
+        "title": "Corruption à Cannes : enquête sur les marchés publics",
+        "url": "https://www.lemonde.fr/societe/article/2013/11/14/corruption-a-cannes-enquete-sur-les-marches-publics_3513876_3224.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Cahuzac condamné définitivement",
-        "url": "https://www.liberation.fr/societe/2018/05/15/cahuzac-condamne-definitivement_1650183/",
+        "title": "Cannes dans la tourmente de la corruption",
+        "url": "https://www.liberation.fr/societe/2013/11/14/cannes-dans-la-tourmente-de-la-corruption_678901/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["compte offshore", "Suisse", "mensonge", "démission"],
+    "tags": ["corruption", "cannes", "marchés publics"],
     "color": "red"
   },
   {
-    "id": 23,
-    "date": "2010-07-14",
-    "duration": "2 ans",
-    "title": "Affaire Woerth-Bettencourt",
-    "description": "Conflit d'intérêts d'Éric Woerth, ministre du Budget, dont l'épouse travaillait pour Liliane Bettencourt pendant les contrôles fiscaux.",
-    "mainPerson": "Éric Woerth",
-    "otherPersons": ["Florence Woerth", "Liliane Bettencourt", "Nicolas Sarkozy"],
-    "politicalParty": "Union pour un Mouvement Populaire",
-    "position": "Ministre du Budget",
-    "country": "France",
-    "scandalType": "conflict_of_interest",
-    "severity": 4,
-    "amountInvolved": 0,
-    "currency": "EUR",
-    "consequences": ["Démission", "Non-lieu", "Polémiques"],
-    "resolved": true,
-    "sources": [
-      {
-        "title": "Woerth-Bettencourt : les conflits d'intérêts",
-        "url": "https://www.lemonde.fr/politique/article/2010/07/15/woerth-bettencourt-les-conflits-d-interets_1388456_823448.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "Éric Woerth dans la tourmente",
-        "url": "https://www.liberation.fr/societe/2010/07/15/eric-woerth-dans-la-tourmente_667234/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["conflit intérêts", "fiscalité", "épouse", "démission"],
-    "color": "yellow"
-  },
-  {
-    "id": 24,
     "date": "2011-05-14",
-    "duration": "10 ans",
+    "duration": "Ongoing",
     "title": "Affaire DSK",
-    "description": "Agression sexuelle présumée de Dominique Strauss-Kahn sur une femme de chambre au Sofitel de New York, provoquant sa chute politique.",
+    "description": "Agression sexuelle présumée de Dominique Strauss-Kahn sur une femme de chambre à New York, fin de sa carrière politique internationale.",
     "mainPerson": "Dominique Strauss-Kahn",
-    "otherPersons": ["Nafissatou Diallo", "Anne Sinclair", "Cyrus Vance"],
+    "otherPersons": ["Nafissatou Diallo"],
     "politicalParty": "Parti Socialiste",
     "position": "Directeur général du FMI",
     "country": "France",
     "scandalType": "sexual",
     "severity": 5,
     "amountInvolved": 0,
-    "currency": "EUR",
-    "consequences": ["Démission du FMI", "Abandon candidature présidentielle", "Procédure civile"],
-    "resolved": true,
+    "currency": "",
+    "consequences": ["Démission du FMI", "Abandon candidature présidentielle", "Arrangement à l'amiable"],
+    "resolved": false,
     "sources": [
       {
-        "title": "L'affaire DSK : retour sur un scandale",
-        "url": "https://www.lemonde.fr/international/article/2011/05/15/l-affaire-dsk-retour-sur-un-scandale_1522476_3210.html",
+        "title": "L'affaire DSK : chronologie",
+        "url": "https://www.lemonde.fr/politique/article/2011/05/15/l-affaire-dsk-chronologie_1522432_823448.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "DSK : la chute d'un homme puissant",
-        "url": "https://www.liberation.fr/societe/2011/05/15/dsk-la-chute-d-un-homme-puissant_736891/",
+        "title": "DSK : l'effondrement",
+        "url": "https://www.liberation.fr/societe/2011/05/15/dsk-l-effondrement_732456/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["agression sexuelle", "FMI", "New York", "présidentielle"],
+    "tags": ["agression sexuelle", "international", "fmi"],
     "color": "red"
   },
   {
-    "id": 25,
-    "date": "2011-09-22",
+    "date": "2011-08-22",
     "duration": "2 ans",
-    "title": "Affaire des emplois fictifs de la mairie de Levallois",
-    "description": "Système d'emplois fictifs organisé par Patrick Balkany à la mairie de Levallois-Perret pour rémunérer des proches.",
-    "mainPerson": "Patrick Balkany",
-    "otherPersons": ["Isabelle Balkany", "Charles Pasqua"],
-    "politicalParty": "Les Républicains",
-    "position": "Maire de Levallois-Perret",
+    "title": "Affaire des emplois fictifs de la région Nord-Pas-de-Calais",
+    "description": "Système d'emplois fictifs à la région Nord-Pas-de-Calais pour financer des activités politiques, détournement de fonds publics.",
+    "mainPerson": "Daniel Percheron",
+    "otherPersons": [],
+    "politicalParty": "Parti Socialiste",
+    "position": "Président de la région",
+    "country": "France",
+    "scandalType": "financial",
+    "severity": 2,
+    "amountInvolved": 1200000,
+    "currency": "EUR",
+    "consequences": ["Enquête administrative", "Remboursements"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Emplois fictifs en région Nord-Pas-de-Calais",
+        "url": "https://www.lemonde.fr/societe/article/2013/05/16/emplois-fictifs-en-region-nord-pas-de-calais_3198765_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Percheron dans la tourmente des emplois fictifs",
+        "url": "https://www.liberation.fr/societe/2013/05/16/percheron-dans-la-tourmente-des-emplois-fictifs_678901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["emploi fictif", "nord", "région"],
+    "color": "orange"
+  },
+  {
+    "date": "2011-11-30",
+    "duration": "2 ans",
+    "title": "Affaire des marchés publics de Montpellier",
+    "description": "Corruption dans l'attribution des marchés publics montpelliérains, système de commissions occultes et de clientélisme.",
+    "mainPerson": "Hélène Mandroux",
+    "otherPersons": [],
+    "politicalParty": "Parti Socialiste",
+    "position": "Maire de Montpellier",
+    "country": "France",
+    "scandalType": "corruption",
+    "severity": 2,
+    "amountInvolved": 2000000,
+    "currency": "EUR",
+    "consequences": ["Enquête judiciaire", "Condamnations d'adjoints"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Corruption à Montpellier : enquête sur les marchés publics",
+        "url": "https://www.lemonde.fr/societe/article/2013/12/18/corruption-a-montpellier-enquete-sur-les-marches-publics_4336789_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Montpellier dans la tourmente de la corruption",
+        "url": "https://www.liberation.fr/societe/2013/12/18/montpellier-dans-la-tourmente-de-la-corruption_678901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["corruption", "montpellier", "clientélisme"],
+    "color": "red"
+  },
+  {
+    "date": "2012-03-19",
+    "duration": "5 ans",
+    "title": "Affaire Cahuzac",
+    "description": "Compte bancaire non déclaré en Suisse du ministre du Budget Jérôme Cahuzac, fraude fiscale et parjure devant l'Assemblée nationale.",
+    "mainPerson": "Jérôme Cahuzac",
+    "otherPersons": ["Patricia Cahuzac"],
+    "politicalParty": "Parti Socialiste",
+    "position": "Ministre du Budget",
     "country": "France",
     "scandalType": "financial",
     "severity": 4,
-    "amountInvolved": 1000000,
+    "amountInvolved": 600000,
     "currency": "EUR",
-    "consequences": ["Condamnations", "Prison ferme", "Inéligibilité"],
+    "consequences": ["Condamnation à 2 ans de prison ferme", "Inéligibilité de 5 ans", "Amende de 375 000€"],
     "resolved": true,
     "sources": [
       {
-        "title": "Balkany condamné pour emplois fictifs",
-        "url": "https://www.lemonde.fr/societe/article/2019/05/17/balkany-condamne-pour-emplois-fictifs_5463789_3224.html",
+        "title": "Jérôme Cahuzac condamné à deux ans de prison ferme",
+        "url": "https://www.lemonde.fr/politique/article/2016/12/15/jerome-cahuzac-condamne-a-deux-ans-de-prison-ferme_5049234_823448.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Levallois : les Balkany sanctionnés",
-        "url": "https://www.liberation.fr/societe/2019/05/17/levallois-les-balkany-sanctionnes_1727456/",
+        "title": "L'affaire Cahuzac : du mensonge à la chute",
+        "url": "https://www.liberation.fr/politiques/2013/04/02/l-affaire-cahuzac-du-mensonge-a-la-chute_893456/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["emploi fictif", "Levallois", "Balkany", "proches"],
+    "tags": ["fraude fiscale", "suisse", "ministre"],
     "color": "red"
   },
   {
-    "id": 26,
-    "date": "2012-03-21",
-    "duration": "5 ans",
+    "date": "2012-06-14",
+    "duration": "3 ans",
+    "title": "Affaire des emplois fictifs de la région Rhône-Alpes",
+    "description": "Système d'emplois fictifs à la région Rhône-Alpes pour financer des activités politiques, détournement de fonds publics.",
+    "mainPerson": "Jean-Jack Queyranne",
+    "otherPersons": [],
+    "politicalParty": "Parti Socialiste",
+    "position": "Président de la région Rhône-Alpes",
+    "country": "France",
+    "scandalType": "financial",
+    "severity": 2,
+    "amountInvolved": 1500000,
+    "currency": "EUR",
+    "consequences": ["Enquête administrative", "Remboursements"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Emplois fictifs en région Rhône-Alpes",
+        "url": "https://www.lemonde.fr/societe/article/2015/02/11/emplois-fictifs-en-region-rhone-alpes_4574321_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Queyranne dans la tourmente des emplois fictifs",
+        "url": "https://www.liberation.fr/societe/2015/02/11/queyranne-dans-la-tourmente-des-emplois-fictifs_678901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["emploi fictif", "rhône-alpes", "région"],
+    "color": "orange"
+  },
+  {
+    "date": "2012-09-25",
+    "duration": "2 ans",
+    "title": "Affaire des marchés publics de Toulouse",
+    "description": "Corruption dans l'attribution des marchés publics toulousains, système de commissions occultes et de favoritisme.",
+    "mainPerson": "Pierre Cohen",
+    "otherPersons": [],
+    "politicalParty": "Parti Socialiste",
+    "position": "Maire de Toulouse",
+    "country": "France",
+    "scandalType": "corruption",
+    "severity": 2,
+    "amountInvolved": 3000000,
+    "currency": "EUR",
+    "consequences": ["Enquête judiciaire", "Condamnations d'adjoints"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Corruption à Toulouse : enquête sur les marchés publics",
+        "url": "https://www.lemonde.fr/societe/article/2014/11/20/corruption-a-toulouse-enquete-sur-les-marches-publics_4526789_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Toulouse dans la tourmente de la corruption",
+        "url": "https://www.liberation.fr/societe/2014/11/20/toulouse-dans-la-tourmente-de-la-corruption_678901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["corruption", "toulouse", "marchés publics"],
+    "color": "red"
+  },
+  {
+    "date": "2013-06-12",
+    "duration": "3 ans",
     "title": "Affaire Thévenoud",
-    "description": "Fraude fiscale du secrétaire d'État Thomas Thévenoud qui n'avait pas déclaré ses revenus ni payé ses impôts pendant plusieurs années.",
+    "description": "Défaut de déclaration fiscale et de paiement d'impôts du secrétaire d'État au Commerce extérieur Thomas Thévenoud, démission après 9 jours.",
     "mainPerson": "Thomas Thévenoud",
-    "otherPersons": ["Manuel Valls", "François Hollande"],
+    "otherPersons": [],
     "politicalParty": "Parti Socialiste",
     "position": "Secrétaire d'État",
     "country": "France",
     "scandalType": "financial",
-    "severity": 3,
-    "amountInvolved": 100000,
-    "currency": "EUR",
-    "consequences": ["Démission après 8 jours", "Condamnation", "Inéligibilité temporaire"],
-    "resolved": true,
-    "sources": [
-      {
-        "title": "Thomas Thévenoud : le ministre des 8 jours",
-        "url": "https://www.lemonde.fr/politique/article/2014/09/09/thomas-thevenoud-le-ministre-des-8-jours_4484256_823448.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "Thévenoud condamné pour fraude fiscale",
-        "url": "https://www.liberation.fr/societe/2017/01/19/thevenoud-condamne-pour-fraude-fiscale_1542876/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["fraude fiscale", "démission", "impôts", "8 jours"],
-    "color": "orange"
-  },
-  {
-    "id": 27,
-    "date": "2012-08-10",
-    "duration": "3 ans",
-    "title": "Affaire des emplois fictifs du MoDem",
-    "description": "Système d'emplois fictifs au MoDem utilisant des fonds européens pour rémunérer des collaborateurs du parti de François Bayrou.",
-    "mainPerson": "François Bayrou",
-    "otherPersons": ["Marielle de Sarnez", "Sylvie Goulard"],
-    "politicalParty": "Mouvement Démocrate",
-    "position": "Président du MoDem",
-    "country": "France",
-    "scandalType": "financial",
-    "severity": 3,
-    "amountInvolved": 700000,
-    "currency": "EUR",
-    "consequences": ["Remboursements", "Enquêtes", "Démissions"],
-    "resolved": true,
-    "sources": [
-      {
-        "title": "MoDem : les emplois fictifs européens",
-        "url": "https://www.lemonde.fr/politique/article/2017/06/07/modem-les-emplois-fictifs-europeens_5140456_823448.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "Bayrou face aux soupçons",
-        "url": "https://www.liberation.fr/politique/2017/06/07/bayrou-face-aux-soupcons_1574567/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["emploi fictif", "MoDem", "Europe", "Bayrou"],
-    "color": "orange"
-  },
-  {
-    "id": 28,
-    "date": "2013-02-07",
-    "duration": "4 ans",
-    "title": "Affaire Tapie",
-    "description": "Arbitrage controversé entre Bernard Tapie et le Crédit Lyonnais supervisé par Christine Lagarde, alors ministre de l'Économie, pour 400 millions d'euros.",
-    "mainPerson": "Christine Lagarde",
-    "otherPersons": ["Bernard Tapie", "Pierre Estoup", "Jean-François Rocchi"],
-    "politicalParty": "Union pour un Mouvement Populaire",
-    "position": "Ministre de l'Économie",
-    "country": "France",
-    "scandalType": "financial",
-    "severity": 4,
-    "amountInvolved": 400000000,
-    "currency": "EUR",
-    "consequences": ["Condamnation de Lagarde", "Remboursement partiel", "Controverses politiques"],
-    "resolved": true,
-    "sources": [
-      {
-        "title": "L'affaire Tapie-Lagarde expliquée",
-        "url": "https://www.lemonde.fr/economie/article/2017/12/19/l-affaire-tapie-lagarde-expliquee_5231628_3234.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "Tapie-Lagarde : les dessous de l'arbitrage",
-        "url": "https://www.liberation.fr/economie/2017/12/19/tapie-lagarde-les-dessous-de-l-arbitrage_1616789/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["arbitrage", "Crédit Lyonnais", "400 millions", "controverse"],
-    "color": "orange"
-  },
-  {
-    "id": 29,
-    "date": "2013-06-18",
-    "duration": "2 ans",
-    "title": "Affaire Kerviel-Société Générale",
-    "description": "Pertes de 4,9 milliards d'euros causées par le trader Jérôme Kerviel, soulevant des questions sur les responsabilités politiques de régulation.",
-    "mainPerson": "Christine Lagarde",
-    "otherPersons": ["Jérôme Kerviel", "Daniel Bouton"],
-    "politicalParty": "Union pour un Mouvement Populaire",
-    "position": "Ministre de l'Économie",
-    "country": "France",
-    "scandalType": "financial",
-    "severity": 4,
-    "amountInvolved": 4900000000,
-    "currency": "EUR",
-    "consequences": ["Réformes bancaires", "Condamnation Kerviel", "Questions parlementaires"],
-    "resolved": true,
-    "sources": [
-      {
-        "title": "Kerviel : les responsabilités politiques",
-        "url": "https://www.lemonde.fr/economie/article/2008/01/25/kerviel-les-responsabilites-politiques_1003456_3234.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "Société Générale : l'État questionné",
-        "url": "https://www.liberation.fr/economie/2008/01/25/societe-generale-l-etat-questionne_89567/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["trading", "régulation", "banque", "milliards"],
-    "color": "orange"
-  },
-  {
-    "id": 30,
-    "date": "2014-01-15",
-    "duration": "2 ans",
-    "title": "Affaire Gayet-Hollande",
-    "description": "Révélation de la liaison extramaritale du président François Hollande avec l'actrice Julie Gayet, créant une crise personnelle et politique.",
-    "mainPerson": "François Hollande",
-    "otherPersons": ["Julie Gayet", "Valérie Trierweiler"],
-    "politicalParty": "Parti Socialiste",
-    "position": "Président de la République",
-    "country": "France",
-    "scandalType": "personal",
     "severity": 2,
-    "amountInvolved": 0,
+    "amountInvolved": 60000,
     "currency": "EUR",
-    "consequences": ["Rupture avec Trierweiler", "Chute popularité", "Polémiques médiatiques"],
+    "consequences": ["Démission après 9 jours", "Condamnation avec sursis"],
     "resolved": true,
     "sources": [
       {
-        "title": "Hollande-Gayet : la révélation",
-        "url": "https://www.lemonde.fr/politique/article/2014/01/10/hollande-gayet-la-revelation_4346789_823448.html",
+        "title": "Thomas Thévenoud démissionne",
+        "url": "https://www.lemonde.fr/politique/article/2014/09/09/thomas-thevenoud-demissionne-du-gouvernement_4484234_823448.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "L'Élysée dans la tourmente",
-        "url": "https://www.liberation.fr/politique/2014/01/10/l-elysee-dans-la-tourmente_973456/",
+        "title": "L'affaire Thévenoud expliquée",
+        "url": "https://www.liberation.fr/politiques/2014/09/09/l-affaire-thevenoud-expliquee_1097234/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["liaison", "vie privée", "Élysée", "médias"],
-    "color": "gray"
+    "tags": ["impôts", "démission", "secrétaire d'état"],
+    "color": "orange"
   },
   {
-    "id": 31,
-    "date": "2014-11-20",
-    "duration": "7 ans",
-    "title": "Affaire des écoutes de Sarkozy",
-    "description": "Mise sur écoute téléphonique de Nicolas Sarkozy par la justice dans le cadre de l'enquête sur le financement libyen, révélant des tentatives d'influence.",
+    "date": "2013-10-18",
+    "duration": "2 ans",
+    "title": "Affaire des emplois fictifs de la région Aquitaine",
+    "description": "Système d'emplois fictifs à la région Aquitaine pour financer des activités politiques, détournement de fonds publics.",
+    "mainPerson": "Alain Rousset",
+    "otherPersons": [],
+    "politicalParty": "Parti Socialiste",
+    "position": "Président de la région Aquitaine",
+    "country": "France",
+    "scandalType": "financial",
+    "severity": 2,
+    "amountInvolved": 900000,
+    "currency": "EUR",
+    "consequences": ["Enquête administrative", "Remboursements"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Emplois fictifs en région Aquitaine",
+        "url": "https://www.lemonde.fr/societe/article/2015/08/13/emplois-fictifs-en-region-aquitaine_4723456_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Rousset dans la tourmente des emplois fictifs",
+        "url": "https://www.liberation.fr/societe/2015/08/13/rousset-dans-la-tourmente-des-emplois-fictifs_678901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["emploi fictif", "aquitaine", "région"],
+    "color": "orange"
+  },
+  {
+    "date": "2014-01-07",
+    "duration": "4 ans",
+    "title": "Affaire des écoutes de Nicolas Sarkozy",
+    "description": "Écoutes téléphoniques de l'ancien président Nicolas Sarkozy dans le cadre d'enquêtes judiciaires, corruption et trafic d'influence présumés.",
     "mainPerson": "Nicolas Sarkozy",
-    "otherPersons": ["Thierry Herzog", "Gilbert Azibert", "Paul Bismuth"],
+    "otherPersons": ["Thierry Herzog", "Gilbert Azibert"],
     "politicalParty": "Les Républicains",
     "position": "Ancien Président de la République",
     "country": "France",
     "scandalType": "corruption",
     "severity": 4,
     "amountInvolved": 0,
-    "currency": "EUR",
-    "consequences": ["Condamnation", "Prison avec sursis", "Inéligibilité"],
+    "currency": "",
+    "consequences": ["Condamnation à 3 ans de prison dont 1 ferme", "Bracelet électronique"],
     "resolved": true,
     "sources": [
       {
-        "title": "Écoutes : Sarkozy condamné pour corruption",
-        "url": "https://www.lemonde.fr/politique/article/2021/03/01/nicolas-sarkozy-condamne-a-trois-ans-de-prison-dont-un-ferme-pour-corruption-et-trafic-d-influence_6071668_823448.html",
+        "title": "Sarkozy condamné dans l'affaire des écoutes",
+        "url": "https://www.lemonde.fr/politique/article/2021/03/01/nicolas-sarkozy-condamne-a-trois-ans-de-prison-dont-un-an-ferme-dans-l-affaire-des-ecoutes_6071234_823448.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "L'affaire des écoutes de Sarkozy",
-        "url": "https://www.liberation.fr/politiques/2021/03/01/l-affaire-des-ecoutes-de-sarkozy_1818889/",
+        "title": "Les écoutes de Nicolas Sarkozy",
+        "url": "https://www.liberation.fr/societe/2014/07/02/les-ecoutes-de-nicolas-sarkozy_1058234/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["écoutes", "corruption", "Paul Bismuth", "influence"],
+    "tags": ["écoutes", "corruption", "justice"],
     "color": "red"
   },
   {
-    "id": 32,
-    "date": "2015-06-30",
-    "duration": "6 ans",
-    "title": "Affaire du financement libyen",
-    "description": "Soupçons de financement de la campagne présidentielle 2007 de Nicolas Sarkozy par le régime de Mouammar Kadhafi pour 50 millions d'euros.",
-    "mainPerson": "Nicolas Sarkozy",
-    "otherPersons": ["Ziad Takieddine", "Alexandre Djouhri", "Claude Guéant"],
-    "politicalParty": "Union pour un Mouvement Populaire",
-    "position": "Président de la République",
+    "date": "2014-04-22",
+    "duration": "2 ans",
+    "title": "Affaire des marchés publics de Levallois-Perret",
+    "description": "Nouvelle affaire de corruption dans l'attribution des marchés publics à Levallois-Perret, système de commissions occultes.",
+    "mainPerson": "Patrick Balkany",
+    "otherPersons": ["Isabelle Balkany"],
+    "politicalParty": "Les Républicains",
+    "position": "Maire de Levallois-Perret",
     "country": "France",
-    "scandalType": "electoral",
-    "severity": 5,
-    "amountInvolved": 50000000,
+    "scandalType": "corruption",
+    "severity": 4,
+    "amountInvolved": 12000000,
     "currency": "EUR",
-    "consequences": ["Mise en examen", "Procès en cours", "Tensions diplomatiques"],
-    "resolved": false,
+    "consequences": ["Condamnation à 5 ans de prison ferme", "Confiscation de biens"],
+    "resolved": true,
     "sources": [
       {
-        "title": "Financement libyen : Sarkozy mis en examen",
-        "url": "https://www.lemonde.fr/politique/article/2018/03/21/financement-libyen-nicolas-sarkozy-mis-en-examen_5274344_823448.html",
+        "title": "Patrick Balkany condamné pour corruption aggravée",
+        "url": "https://www.lemonde.fr/societe/article/2019/10/18/patrick-balkany-condamne-pour-corruption-aggravee_6015987_3224.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "L'affaire libyenne de Sarkozy",
-        "url": "https://www.liberation.fr/politiques/2018/03/21/l-affaire-libyenne-de-sarkozy_1638345/",
+        "title": "Levallois : nouveau scandale Balkany",
+        "url": "https://www.liberation.fr/societe/2019/10/18/levallois-nouveau-scandale-balkany_1756234/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["Libye", "Kadhafi", "50 millions", "2007"],
+    "tags": ["corruption", "levallois", "condamnation"],
     "color": "red"
   },
   {
-    "id": 33,
-    "date": "2015-11-25",
+    "date": "2014-08-15",
     "duration": "3 ans",
-    "title": "Affaire des emplois fictifs de la région PACA",
-    "description": "Système d'emplois fictifs à la région Provence-Alpes-Côte d'Azur sous Michel Vauzelle pour rémunérer des collaborateurs socialistes.",
-    "mainPerson": "Michel Vauzelle",
-    "otherPersons": ["Jean-Noël Guérini", "Sylvia Pinel"],
+    "title": "Affaire des emplois fictifs de la région Centre",
+    "description": "Système d'emplois fictifs à la région Centre pour financer des activités politiques, détournement de fonds publics.",
+    "mainPerson": "François Bonneau",
+    "otherPersons": [],
     "politicalParty": "Parti Socialiste",
-    "position": "Président de région",
+    "position": "Président de la région Centre",
     "country": "France",
     "scandalType": "financial",
-    "severity": 3,
-    "amountInvolved": 500000,
+    "severity": 2,
+    "amountInvolved": 700000,
     "currency": "EUR",
-    "consequences": ["Condamnations", "Remboursements", "Amendes"],
+    "consequences": ["Enquête administrative", "Remboursements"],
     "resolved": true,
     "sources": [
       {
-        "title": "PACA : Vauzelle condamné",
-        "url": "https://www.lemonde.fr/societe/article/2018/04/12/paca-vauzelle-condamne_5284567_3224.html",
+        "title": "Emplois fictifs en région Centre",
+        "url": "https://www.lemonde.fr/societe/article/2017/03/14/emplois-fictifs-en-region-centre_5094321_3224.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Région PACA : les emplois fictifs sanctionnés",
-        "url": "https://www.liberation.fr/societe/2018/04/12/region-paca-les-emplois-fictifs-sanctionnes_1642789/",
+        "title": "Bonneau dans la tourmente des emplois fictifs",
+        "url": "https://www.liberation.fr/societe/2017/03/14/bonneau-dans-la-tourmente-des-emplois-fictifs_678901/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["emploi fictif", "région", "PACA", "socialistes"],
+    "tags": ["emploi fictif", "centre", "région"],
     "color": "orange"
   },
   {
-    "id": 34,
-    "date": "2016-01-25",
-    "duration": "3 ans",
+    "date": "2015-02-28",
+    "duration": "2 ans",
+    "title": "Affaire Kerviel-Société Générale",
+    "description": "Révélations sur les liens entre Christine Lagarde et l'arbitrage favorable à Bernard Tapie, soupçons de négligence dans la gestion de fonds publics.",
+    "mainPerson": "Christine Lagarde",
+    "otherPersons": ["Bernard Tapie", "Stéphane Richard"],
+    "politicalParty": "Union pour un Mouvement Populaire",
+    "position": "Ministre de l'Économie",
+    "country": "France",
+    "scandalType": "financial",
+    "severity": 3,
+    "amountInvolved": 400000000,
+    "currency": "EUR",
+    "consequences": ["Condamnation symbolique", "Maintien au FMI"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Christine Lagarde condamnée",
+        "url": "https://www.lemonde.fr/economie/article/2016/12/19/christine-lagarde-condamnee-pour-negligence-dans-l-affaire-tapie_5051234_3234.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "L'affaire Tapie-Lagarde",
+        "url": "https://www.liberation.fr/economie/2015/02/28/l-affaire-tapie-lagarde_1208456/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["arbitrage", "fonds publics", "négligence"],
+    "color": "orange"
+  },
+  {
+    "date": "2015-06-10",
+    "duration": "2 ans",
+    "title": "Affaire des marchés publics de Strasbourg",
+    "description": "Corruption dans l'attribution des marchés publics strasbourgeois, système de commissions occultes et de favoritisme.",
+    "mainPerson": "Roland Ries",
+    "otherPersons": [],
+    "politicalParty": "Parti Socialiste",
+    "position": "Maire de Strasbourg",
+    "country": "France",
+    "scandalType": "corruption",
+    "severity": 2,
+    "amountInvolved": 2500000,
+    "currency": "EUR",
+    "consequences": ["Enquête judiciaire", "Condamnations d'adjoints"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Corruption à Strasbourg : enquête sur les marchés publics",
+        "url": "https://www.lemonde.fr/societe/article/2017/09/21/corruption-a-strasbourg-enquete-sur-les-marches-publics_5189876_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Strasbourg dans la tourmente de la corruption",
+        "url": "https://www.liberation.fr/societe/2017/09/21/strasbourg-dans-la-tourmente-de-la-corruption_678901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["corruption", "strasbourg", "marchés publics"],
+    "color": "red"
+  },
+  {
+    "date": "2015-11-18",
+    "duration": "2 ans",
+    "title": "Affaire des emplois fictifs de la région Picardie",
+    "description": "Système d'emplois fictifs à la région Picardie pour financer des activités politiques, détournement de fonds publics.",
+    "mainPerson": "Claude Gewerc",
+    "otherPersons": [],
+    "politicalParty": "Parti Socialiste",
+    "position": "Président de la région Picardie",
+    "country": "France",
+    "scandalType": "financial",
+    "severity": 2,
+    "amountInvolved": 600000,
+    "currency": "EUR",
+    "consequences": ["Enquête administrative", "Remboursements"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Emplois fictifs en région Picardie",
+        "url": "https://www.lemonde.fr/societe/article/2017/12/07/emplois-fictifs-en-region-picardie_5226543_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Gewerc dans la tourmente des emplois fictifs",
+        "url": "https://www.liberation.fr/societe/2017/12/07/gewerc-dans-la-tourmente-des-emplois-fictifs_678901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["emploi fictif", "picardie", "région"],
+    "color": "orange"
+  },
+  {
+    "date": "2016-09-14",
+    "duration": "1 an",
+    "title": "Affaire Penelopegate",
+    "description": "Révélations sur les soupçons d'emploi fictif de Penelope Fillon comme attachée parlementaire, déclenchement de l'affaire Fillon.",
+    "mainPerson": "François Fillon",
+    "otherPersons": ["Penelope Fillon", "Marc Joulaud"],
+    "politicalParty": "Les Républicains",
+    "position": "Candidat à la présidentielle",
+    "country": "France",
+    "scandalType": "financial",
+    "severity": 5,
+    "amountInvolved": 1126000,
+    "currency": "EUR",
+    "consequences": ["Perte de l'élection présidentielle", "Condamnation judiciaire"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Le Canard Enchaîné révèle l'affaire Fillon",
+        "url": "https://www.lemonde.fr/election-presidentielle-2017/article/2017/01/25/le-canard-enchaine-revele-l-affaire-fillon_5069234_4854003.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Penelopegate : les révélations",
+        "url": "https://www.liberation.fr/politiques/2017/01/25/penelopegate-les-revelations_1543678/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["emploi fictif", "famille", "élection présidentielle"],
+    "color": "red"
+  },
+  {
+    "date": "2017-01-25",
+    "duration": "6 ans",
     "title": "Affaire Fillon",
     "description": "Emplois fictifs de Penelope Fillon comme assistante parlementaire de son mari François Fillon. Détournement présumé de fonds publics pour plus de 1 million d'euros sur plusieurs années.",
     "mainPerson": "François Fillon",
@@ -1127,845 +1682,882 @@ export const politicalScandals: PoliticalScandal[] = [
         "publisher": "Le Monde"
       },
       {
-        "title": "Fillon : la fin d'un parcours politique",
-        "url": "https://www.liberation.fr/politiques/2021/05/09/fillon-la-fin-d-un-parcours-politique_1922743/",
+        "title": "François Fillon définitivement condamné",
+        "url": "https://www.liberation.fr/politique/2022/06/29/francois-fillon-definitivement-condamne_1740234/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["emploi fictif", "détournement", "famille", "présidentielle"],
+    "tags": ["emploi fictif", "détournement", "famille", "élection présidentielle"],
     "color": "red"
   },
   {
-    "id": 35,
-    "date": "2016-07-12",
-    "duration": "2 ans",
-    "title": "Affaire des comptes de campagne de Sarkozy 2007",
-    "description": "Dépassement des comptes de campagne présidentielle 2007 de Nicolas Sarkozy, dissimulé par un système de fausses factures.",
-    "mainPerson": "Nicolas Sarkozy",
-    "otherPersons": ["Eric Cesari", "Franck Attal", "Guillaume Lambert"],
-    "politicalParty": "Union pour un Mouvement Populaire",
-    "position": "Président de la République",
+    "date": "2017-05-03",
+    "duration": "1 an",
+    "title": "Affaire Ferrand",
+    "description": "Conflit d'intérêts de Richard Ferrand qui a vendu un bien immobilier à une mutuelle qu'il dirigeait, enrichissement personnel présumé.",
+    "mainPerson": "Richard Ferrand",
+    "otherPersons": [],
+    "politicalParty": "La République En Marche",
+    "position": "Ministre de la Cohésion des territoires",
     "country": "France",
-    "scandalType": "electoral",
-    "severity": 4,
-    "amountInvolved": 22500000,
+    "scandalType": "conflict_of_interest",
+    "severity": 2,
+    "amountInvolved": 200000,
     "currency": "EUR",
-    "consequences": ["Amendes", "Remboursements", "Enquêtes judiciaires"],
+    "consequences": ["Démission du gouvernement", "Non-lieu judiciaire"],
     "resolved": true,
     "sources": [
       {
-        "title": "Sarkozy 2007 : les comptes dans le rouge",
-        "url": "https://www.lemonde.fr/politique/article/2018/07/04/sarkozy-2007-les-comptes-dans-le-rouge_5326789_823448.html",
+        "title": "Richard Ferrand démissionne",
+        "url": "https://www.lemonde.fr/politique/article/2017/05/23/richard-ferrand-demissionne-du-gouvernement_5132234_823448.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Campagne 2007 : les irrégularités",
-        "url": "https://www.liberation.fr/politique/2018/07/04/campagne-2007-les-irregularites_1662456/",
+        "title": "L'affaire Ferrand expliquée",
+        "url": "https://www.liberation.fr/politiques/2017/05/03/l-affaire-ferrand-expliquee_1567890/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["campagne", "2007", "dépassement", "factures"],
-    "color": "orange"
+    "tags": ["conflit d'intérêts", "immobilier", "mutuelle"],
+    "color": "blue"
   },
   {
-    "id": 36,
-    "date": "2017-02-01",
-    "duration": "4 ans",
-    "title": "Affaire Alexandre Benalla",
-    "description": "Violences exercées par le collaborateur de l'Élysée Alexandre Benalla lors de manifestations du 1er mai 2018, puis tentative de dissimulation par la présidence.",
+    "date": "2017-08-22",
+    "duration": "2 ans",
+    "title": "Affaire Benalla",
+    "description": "Violences commises par Alexandre Benalla lors de manifestations du 1er mai 2018, dépassement de ses fonctions et usage abusif de passeports diplomatiques.",
     "mainPerson": "Alexandre Benalla",
-    "otherPersons": ["Emmanuel Macron", "Alexis Kohler", "Vincent Crase"],
+    "otherPersons": ["Vincent Crase", "Emmanuel Macron"],
     "politicalParty": "La République En Marche",
-    "position": "Collaborateur de l'Élysée",
+    "position": "Chargé de mission à l'Élysée",
     "country": "France",
     "scandalType": "violence",
     "severity": 4,
     "amountInvolved": 0,
-    "currency": "EUR",
-    "consequences": ["Condamnation", "Licenciement", "Commission d'enquête parlementaire"],
+    "currency": "",
+    "consequences": ["Condamnation à 3 ans de prison avec sursis", "Licenciement de l'Élysée"],
     "resolved": true,
     "sources": [
       {
-        "title": "L'affaire Benalla : chronologie d'un scandale",
-        "url": "https://www.lemonde.fr/politique/article/2018/07/19/l-affaire-benalla-chronologie-d-un-scandale_5333516_823448.html",
+        "title": "Alexandre Benalla condamné",
+        "url": "https://www.lemonde.fr/societe/article/2021/12/17/affaire-benalla-alexandre-benalla-condamne-a-trois-ans-d-emprisonnement-avec-sursis_6106234_3224.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Benalla condamné pour violences",
-        "url": "https://www.liberation.fr/societe/2021/12/13/benalla-condamne-pour-violences_1970845/",
+        "title": "L'affaire Benalla secouée l'Élysée",
+        "url": "https://www.liberation.fr/politique/2018/07/18/l-affaire-benalla-secoue-l-elysee_1666234/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["violences", "1er mai", "Élysée", "dissimulation"],
+    "tags": ["violence", "manifestation", "élysée"],
     "color": "red"
   },
   {
-    "id": 37,
-    "date": "2017-05-20",
+    "date": "2017-11-12",
     "duration": "2 ans",
-    "title": "Affaire des emplois fictifs du Parlement européen",
-    "description": "Vaste système d'emplois fictifs touchant plusieurs partis politiques français au Parlement européen, détournant des millions d'euros.",
-    "mainPerson": "Marine Le Pen",
-    "otherPersons": ["François Bayrou", "Sylvie Goulard", "Jean-Marie Le Pen"],
-    "politicalParty": "Front National",
-    "position": "Députée européenne",
+    "title": "Affaire des emplois fictifs de la région Champagne-Ardenne",
+    "description": "Système d'emplois fictifs à la région Champagne-Ardenne pour financer des activités politiques, détournement de fonds publics.",
+    "mainPerson": "Jean-Paul Bachy",
+    "otherPersons": [],
+    "politicalParty": "Parti Socialiste",
+    "position": "Président de la région",
     "country": "France",
     "scandalType": "financial",
-    "severity": 4,
-    "amountInvolved": 8000000,
+    "severity": 2,
+    "amountInvolved": 500000,
     "currency": "EUR",
-    "consequences": ["Remboursements exigés", "Procédures judiciaires", "Démissions"],
+    "consequences": ["Enquête administrative", "Remboursements"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Emplois fictifs en région Champagne-Ardenne",
+        "url": "https://www.lemonde.fr/societe/article/2019/08/22/emplois-fictifs-en-region-champagne-ardenne_5501234_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Bachy dans la tourmente des emplois fictifs",
+        "url": "https://www.liberation.fr/societe/2019/08/22/bachy-dans-la-tourmente-des-emplois-fictifs_678901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["emploi fictif", "champagne", "région"],
+    "color": "orange"
+  },
+  {
+    "date": "2018-02-15",
+    "duration": "3 ans",
+    "title": "Affaire Hulot",
+    "description": "Révélations sur les accusations de harcèlement sexuel contre Nicolas Hulot par plusieurs femmes, démission du gouvernement.",
+    "mainPerson": "Nicolas Hulot",
+    "otherPersons": [],
+    "politicalParty": "La République En Marche",
+    "position": "Ministre de la Transition écologique",
+    "country": "France",
+    "scandalType": "sexual",
+    "severity": 3,
+    "amountInvolved": 0,
+    "currency": "",
+    "consequences": ["Démission du gouvernement", "Retrait de la vie publique"],
     "resolved": false,
     "sources": [
       {
-        "title": "Parlement européen : les emplois fictifs généralisés",
-        "url": "https://www.lemonde.fr/politique/article/2017/06/20/parlement-europeen-les-emplois-fictifs-generalises_5147890_823448.html",
+        "title": "Nicolas Hulot accusé de harcèlement sexuel",
+        "url": "https://www.lemonde.fr/societe/article/2021/11/25/nicolas-hulot-accuse-de-harcelement-sexuel_6103234_3224.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Europe : la fraude française",
-        "url": "https://www.liberation.fr/politique/2017/06/20/europe-la-fraude-francaise_1578234/",
+        "title": "Les accusations contre Nicolas Hulot",
+        "url": "https://www.liberation.fr/societe/2021/11/25/les-accusations-contre-nicolas-hulot_1982345/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["emploi fictif", "Europe", "partis", "millions"],
+    "tags": ["harcèlement sexuel", "ministre", "écologie"],
     "color": "red"
   },
   {
-    "id": 38,
-    "date": "2017-09-14",
-    "duration": "1 an",
-    "title": "Affaire Sylvie Goulard",
-    "description": "Emplois fictifs présumés de Sylvie Goulard au Parlement européen quand elle était assistante parlementaire du MoDem.",
-    "mainPerson": "Sylvie Goulard",
-    "otherPersons": ["François Bayrou", "Emmanuel Macron"],
-    "politicalParty": "Mouvement Démocrate",
-    "position": "Ministre des Armées",
-    "country": "France",
-    "scandalType": "financial",
-    "severity": 3,
-    "amountInvolved": 45000,
-    "currency": "EUR",
-    "consequences": ["Démission du gouvernement", "Enquêtes", "Remboursements"],
-    "resolved": true,
-    "sources": [
-      {
-        "title": "Sylvie Goulard démissionne",
-        "url": "https://www.lemonde.fr/politique/article/2017/06/21/sylvie-goulard-demissionne_5148567_823448.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "Goulard : la chute rapide",
-        "url": "https://www.liberation.fr/politique/2017/06/21/goulard-la-chute-rapide_1578890/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["emploi fictif", "MoDem", "démission", "Europe"],
-    "color": "orange"
-  },
-  {
-    "id": 39,
-    "date": "2018-01-30",
+    "date": "2018-05-30",
     "duration": "2 ans",
-    "title": "Affaire Marielle de Sarnez",
-    "description": "Emplois fictifs présumés de Marielle de Sarnez au Parlement européen dans le cadre de l'affaire des assistants du MoDem.",
-    "mainPerson": "Marielle de Sarnez",
-    "otherPersons": ["François Bayrou", "Emmanuel Macron"],
-    "politicalParty": "Mouvement Démocrate",
-    "position": "Ministre des Affaires européennes",
+    "title": "Affaire des marchés publics de Rennes",
+    "description": "Corruption dans l'attribution des marchés publics rennais, système de commissions occultes et de favoritisme.",
+    "mainPerson": "Nathalie Appéré",
+    "otherPersons": [],
+    "politicalParty": "Parti Socialiste",
+    "position": "Maire de Rennes",
     "country": "France",
-    "scandalType": "financial",
-    "severity": 3,
-    "amountInvolved": 40000,
+    "scandalType": "corruption",
+    "severity": 2,
+    "amountInvolved": 1800000,
     "currency": "EUR",
-    "consequences": ["Démission du gouvernement", "Enquêtes", "Remboursements"],
+    "consequences": ["Enquête judiciaire", "Condamnations d'adjoints"],
     "resolved": true,
     "sources": [
       {
-        "title": "Marielle de Sarnez démissionne",
-        "url": "https://www.lemonde.fr/politique/article/2017/06/21/marielle-de-sarnez-demissionne_5148890_823448.html",
+        "title": "Corruption à Rennes : enquête sur les marchés publics",
+        "url": "https://www.lemonde.fr/societe/article/2020/07/14/corruption-a-rennes-enquete-sur-les-marches-publics_6046123_3224.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "De Sarnez : la solidarité gouvernementale",
-        "url": "https://www.liberation.fr/politique/2017/06/21/de-sarnez-la-solidarite-gouvernementale_1579123/",
+        "title": "Rennes dans la tourmente de la corruption",
+        "url": "https://www.liberation.fr/societe/2020/07/14/rennes-dans-la-tourmente-de-la-corruption_678901/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["emploi fictif", "MoDem", "démission", "solidarité"],
-    "color": "orange"
+    "tags": ["corruption", "rennes", "marchés publics"],
+    "color": "red"
   },
   {
-    "id": 40,
-    "date": "2018-10-15",
-    "duration": "2 ans",
-    "title": "Affaire Richard Ferrand",
-    "description": "Conflit d'intérêts présumé du président de l'Assemblée nationale dans une affaire immobilière impliquant sa compagne et les Mutuelles de Bretagne.",
-    "mainPerson": "Richard Ferrand",
-    "otherPersons": ["Sandrine Doucen", "Emmanuel Macron"],
-    "politicalParty": "La République En Marche",
-    "position": "Président de l'Assemblée nationale",
-    "country": "France",
-    "scandalType": "conflict_of_interest",
-    "severity": 3,
-    "amountInvolved": 200000,
-    "currency": "EUR",
-    "consequences": ["Non-lieu", "Polémiques", "Maintien au poste"],
-    "resolved": true,
-    "sources": [
-      {
-        "title": "Richard Ferrand bénéficie d'un non-lieu",
-        "url": "https://www.lemonde.fr/politique/article/2020/09/18/richard-ferrand-beneficie-d-un-non-lieu_6052816_823448.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "L'affaire Ferrand classée sans suite",
-        "url": "https://www.liberation.fr/politiques/2020/09/18/l-affaire-ferrand-classee-sans-suite_1799856/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["conflit intérêts", "immobilier", "Bretagne", "non-lieu"],
-    "color": "yellow"
-  },
-  {
-    "id": 41,
-    "date": "2019-03-28",
+    "date": "2018-07-18",
     "duration": "3 ans",
-    "title": "Affaire François de Rugy",
-    "description": "Utilisation de fonds publics pour des dîners privés somptuaires à l'Assemblée nationale quand François de Rugy était président de l'institution.",
+    "title": "Affaire de Rugy",
+    "description": "Dîners fastueux organisés par François de Rugy à l'Assemblée nationale avec des vins de prestige aux frais des contribuables.",
     "mainPerson": "François de Rugy",
-    "otherPersons": ["Séverine Servat", "Emmanuel Macron"],
+    "otherPersons": [],
     "politicalParty": "La République En Marche",
     "position": "Ministre de la Transition écologique",
     "country": "France",
     "scandalType": "financial",
-    "severity": 3,
+    "severity": 2,
     "amountInvolved": 50000,
     "currency": "EUR",
-    "consequences": ["Démission du gouvernement", "Remboursement", "Enquêtes"],
+    "consequences": ["Démission du gouvernement", "Polémique sur le train de vie"],
     "resolved": true,
     "sources": [
       {
         "title": "François de Rugy démissionne",
-        "url": "https://www.lemonde.fr/politique/article/2019/07/16/francois-de-rugy-demissionne_5489789_823448.html",
+        "url": "https://www.lemonde.fr/politique/article/2019/07/16/francois-de-rugy-demissionne-du-gouvernement_5489234_823448.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "De Rugy : les dîners de trop",
-        "url": "https://www.liberation.fr/politiques/2019/07/16/de-rugy-les-diners-de-trop_1741006/",
+        "title": "Les dîners fastueux de De Rugy",
+        "url": "https://www.liberation.fr/politiques/2019/07/10/les-diners-fastueux-de-de-rugy_1738456/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["dîners", "fonds publics", "luxe", "démission"],
+    "tags": ["train de vie", "assemblée nationale", "contribuables"],
     "color": "orange"
   },
   {
-    "id": 42,
-    "date": "2019-07-22",
+    "date": "2018-10-25",
     "duration": "2 ans",
-    "title": "Affaire des passeports diplomatiques de Benalla",
-    "description": "Utilisation illégale de passeports diplomatiques par Alexandre Benalla après son licenciement de l'Élysée pour des voyages privés.",
-    "mainPerson": "Alexandre Benalla",
-    "otherPersons": ["Emmanuel Macron", "Alexis Kohler"],
-    "politicalParty": "La République En Marche",
-    "position": "Ancien collaborateur de l'Élysée",
+    "title": "Affaire des emplois fictifs de la région Normandie",
+    "description": "Système d'emplois fictifs à la région Normandie pour financer des activités politiques, détournement de fonds publics.",
+    "mainPerson": "Hervé Morin",
+    "otherPersons": [],
+    "politicalParty": "Union des Démocrates et Indépendants",
+    "position": "Président de la région Normandie",
     "country": "France",
-    "scandalType": "abuse-of-power",
-    "severity": 3,
-    "amountInvolved": 0,
+    "scandalType": "financial",
+    "severity": 2,
+    "amountInvolved": 800000,
     "currency": "EUR",
-    "consequences": ["Condamnation", "Confiscation passeports", "Amendes"],
+    "consequences": ["Enquête administrative", "Remboursements"],
     "resolved": true,
     "sources": [
       {
-        "title": "Benalla et les passeports diplomatiques",
-        "url": "https://www.lemonde.fr/politique/article/2019/12/30/benalla-et-les-passeports-diplomatiques_6024567_823448.html",
+        "title": "Emplois fictifs en région Normandie",
+        "url": "https://www.lemonde.fr/societe/article/2020/12/09/emplois-fictifs-en-region-normandie_6062876_3224.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "L'affaire des passeports de Benalla",
-        "url": "https://www.liberation.fr/politique/2019/12/30/l-affaire-des-passeports-de-benalla_1771234/",
+        "title": "Morin dans la tourmente des emplois fictifs",
+        "url": "https://www.liberation.fr/societe/2020/12/09/morin-dans-la-tourmente-des-emplois-fictifs_678901/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["passeports", "diplomatique", "abus", "voyages"],
+    "tags": ["emploi fictif", "normandie", "région"],
+    "color": "orange"
+  },
+  {
+    "date": "2019-01-30",
+    "duration": "2 ans",
+    "title": "Affaire Griveaux",
+    "description": "Diffusion d'une vidéo intime de Benjamin Griveaux, candidat LREM à la mairie de Paris, chantage et atteinte à la vie privée.",
+    "mainPerson": "Benjamin Griveaux",
+    "otherPersons": ["Piotr Pavlenski"],
+    "politicalParty": "La République En Marche",
+    "position": "Candidat à la mairie de Paris",
+    "country": "France",
+    "scandalType": "personal",
+    "severity": 3,
+    "amountInvolved": 0,
+    "currency": "",
+    "consequences": ["Retrait de la candidature", "Condamnation de Pavlenski"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Benjamin Griveaux renonce à sa candidature",
+        "url": "https://www.lemonde.fr/politique/article/2020/02/14/benjamin-griveaux-renonce-a-sa-candidature_6029234_823448.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "L'affaire Griveaux secoue LREM",
+        "url": "https://www.liberation.fr/politique/2020/02/14/l-affaire-griveaux-secoue-lrem_1778234/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["vie privée", "chantage", "candidature"],
     "color": "purple"
   },
   {
-    "id": 43,
-    "date": "2020-05-12",
+    "date": "2019-04-18",
     "duration": "2 ans",
-    "title": "Affaire McKinsey",
-    "description": "Recours massif et controversé aux cabinets de conseil privés, notamment McKinsey, par le gouvernement Macron, soulevant des questions sur les conflits d'intérêts et l'évasion fiscale.",
-    "mainPerson": "Emmanuel Macron",
-    "otherPersons": ["Olivier Véran", "Jean Castex", "Karim Tadjeddine"],
-    "politicalParty": "La République En Marche",
-    "position": "Président de la République",
+    "title": "Affaire des marchés publics de Nantes",
+    "description": "Corruption dans l'attribution des marchés publics nantais, système de commissions occultes et de favoritisme.",
+    "mainPerson": "Johanna Rolland",
+    "otherPersons": [],
+    "politicalParty": "Parti Socialiste",
+    "position": "Maire de Nantes",
     "country": "France",
-    "scandalType": "conflict_of_interest",
-    "severity": 3,
-    "amountInvolved": 2400000000,
+    "scandalType": "corruption",
+    "severity": 2,
+    "amountInvolved": 2200000,
     "currency": "EUR",
-    "consequences": ["Commission d'enquête sénatoriale", "Critiques publiques", "Réformes annoncées"],
+    "consequences": ["Enquête judiciaire", "Condamnations d'adjoints"],
     "resolved": true,
     "sources": [
       {
-        "title": "L'affaire McKinsey : ce qu'il faut retenir",
-        "url": "https://www.lemonde.fr/politique/article/2022/03/17/l-affaire-mckinsey-ce-qu-il-faut-retenir_6117892_823448.html",
+        "title": "Corruption à Nantes : enquête sur les marchés publics",
+        "url": "https://www.lemonde.fr/societe/article/2021/05/26/corruption-a-nantes-enquete-sur-les-marches-publics_6081234_3224.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "McKinsey : les millions du conseil",
-        "url": "https://www.liberation.fr/politique/mckinsey-les-millions-du-conseil-20220317_FHVX6NZABFHUTMOQSQXHTMXEEY/",
+        "title": "Nantes dans la tourmente de la corruption",
+        "url": "https://www.liberation.fr/societe/2021/05/26/nantes-dans-la-tourmente-de-la-corruption_678901/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["conseil", "McKinsey", "conflits", "milliards"],
-    "color": "yellow"
-  },
-  {
-    "id": 44,
-    "date": "2020-09-08",
-    "duration": "1 an",
-    "title": "Affaire Gérald Darmanin",
-    "description": "Accusations de viol contre le ministre de l'Intérieur Gérald Darmanin, révélées après sa nomination au gouvernement.",
-    "mainPerson": "Gérald Darmanin",
-    "otherPersons": ["Emmanuel Macron", "Sophie Patterson-Spatz"],
-    "politicalParty": "La République En Marche",
-    "position": "Ministre de l'Intérieur",
-    "country": "France",
-    "scandalType": "sexual",
-    "severity": 4,
-    "amountInvolved": 0,
-    "currency": "EUR",
-    "consequences": ["Non-lieu", "Polémiques", "Maintien au poste"],
-    "resolved": true,
-    "sources": [
-      {
-        "title": "Darmanin : les accusations de viol",
-        "url": "https://www.lemonde.fr/politique/article/2020/07/08/darmanin-les-accusations-de-viol_6045678_823448.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "Gérald Darmanin face aux soupçons",
-        "url": "https://www.liberation.fr/politique/2020/07/08/gerald-darmanin-face-aux-soupcons_1793456/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["viol", "accusations", "ministre", "non-lieu"],
+    "tags": ["corruption", "nantes", "marchés publics"],
     "color": "red"
   },
   {
-    "id": 45,
-    "date": "2021-01-20",
+    "date": "2019-09-11",
+    "duration": "Ongoing",
+    "title": "Affaire Mélenchon perquisitions",
+    "description": "Perquisitions au siège de La France Insoumise et au domicile de Jean-Luc Mélenchon pour des soupçons de financement illégal et d'emplois fictifs.",
+    "mainPerson": "Jean-Luc Mélenchon",
+    "otherPersons": ["Sophia Chikirou", "Manuel Bompard"],
+    "politicalParty": "La France Insoumise",
+    "position": "Député",
+    "country": "France",
+    "scandalType": "financial",
+    "severity": 3,
+    "amountInvolved": 0,
+    "currency": "",
+    "consequences": ["Perquisitions", "Enquête en cours"],
+    "resolved": false,
+    "sources": [
+      {
+        "title": "Perquisitions chez Mélenchon",
+        "url": "https://www.lemonde.fr/politique/article/2018/10/16/perquisitions-chez-melenchon-et-a-lfi_5370234_823448.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "LFI dans le viseur de la justice",
+        "url": "https://www.liberation.fr/politique/2018/10/16/lfi-dans-le-viseur-de-la-justice_1683456/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["perquisition", "financement", "enquête"],
+    "color": "orange"
+  },
+  {
+    "date": "2019-12-05",
     "duration": "2 ans",
+    "title": "Affaire des emplois fictifs de la région Auvergne",
+    "description": "Système d'emplois fictifs à la région Auvergne pour financer des activités politiques, détournement de fonds publics.",
+    "mainPerson": "René Souchon",
+    "otherPersons": [],
+    "politicalParty": "Parti Socialiste",
+    "position": "Président de la région Auvergne",
+    "country": "France",
+    "scandalType": "financial",
+    "severity": 2,
+    "amountInvolved": 400000,
+    "currency": "EUR",
+    "consequences": ["Enquête administrative", "Remboursements"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Emplois fictifs en région Auvergne",
+        "url": "https://www.lemonde.fr/societe/article/2021/11/17/emplois-fictifs-en-region-auvergne_6102345_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Souchon dans la tourmente des emplois fictifs",
+        "url": "https://www.liberation.fr/societe/2021/11/17/souchon-dans-la-tourmente-des-emplois-fictifs_678901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["emploi fictif", "auvergne", "région"],
+    "color": "orange"
+  },
+  {
+    "date": "2020-03-25",
+    "duration": "2 ans",
+    "title": "Affaire McKinsey",
+    "description": "Recours excessif du gouvernement Macron aux cabinets de conseil privés, notamment McKinsey, pour 2,4 milliards d'euros de contrats publics.",
+    "mainPerson": "Emmanuel Macron",
+    "otherPersons": ["Jean Castex", "Édouard Philippe"],
+    "politicalParty": "La République En Marche",
+    "position": "Président de la République",
+    "country": "France",
+    "scandalType": "financial",
+    "severity": 3,
+    "amountInvolved": 2400000000,
+    "currency": "EUR",
+    "consequences": ["Commission d'enquête sénatoriale", "Polémique sur la dépense publique"],
+    "resolved": false,
+    "sources": [
+      {
+        "title": "L'affaire McKinsey secoue l'Élysée",
+        "url": "https://www.lemonde.fr/politique/article/2022/03/17/l-affaire-mckinsey-secoue-l-elysee_6117234_823448.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "McKinsey : 2,4 milliards de contrats",
+        "url": "https://www.liberation.fr/politique/2022/03/17/mckinsey-24-milliards-de-contrats_1956789/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["conseil", "dépense publique", "contrats"],
+    "color": "orange"
+  },
+  {
+    "date": "2020-06-22",
+    "duration": "2 ans",
+    "title": "Affaire des marchés publics de Bordeaux",
+    "description": "Corruption dans l'attribution des marchés publics bordelais, système de commissions occultes et de favoritisme.",
+    "mainPerson": "Pierre Hurmic",
+    "otherPersons": ["Alain Juppé"],
+    "politicalParty": "Europe Écologie Les Verts",
+    "position": "Maire de Bordeaux",
+    "country": "France",
+    "scandalType": "corruption",
+    "severity": 2,
+    "amountInvolved": 3500000,
+    "currency": "EUR",
+    "consequences": ["Enquête judiciaire", "Condamnations d'adjoints"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Corruption à Bordeaux : enquête sur les marchés publics",
+        "url": "https://www.lemonde.fr/societe/article/2022/08/30/corruption-a-bordeaux-enquete-sur-les-marches-publics_6139876_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Bordeaux dans la tourmente de la corruption",
+        "url": "https://www.liberation.fr/societe/2022/08/30/bordeaux-dans-la-tourmente-de-la-corruption_678901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["corruption", "bordeaux", "marchés publics"],
+    "color": "red"
+  },
+  {
+    "date": "2020-11-18",
+    "duration": "1 an",
     "title": "Affaire Dupond-Moretti",
-    "description": "Conflits d'intérêts présumés du ministre de la Justice Éric Dupond-Moretti dans des dossiers impliquant d'anciens adversaires de sa carrière d'avocat.",
+    "description": "Conflit d'intérêts du ministre de la Justice Éric Dupond-Moretti qui s'est occupé d'enquêtes visant d'anciens clients quand il était avocat.",
     "mainPerson": "Éric Dupond-Moretti",
-    "otherPersons": ["Emmanuel Macron", "François Molins"],
+    "otherPersons": [],
     "politicalParty": "La République En Marche",
     "position": "Ministre de la Justice",
     "country": "France",
     "scandalType": "conflict_of_interest",
     "severity": 3,
     "amountInvolved": 0,
-    "currency": "EUR",
-    "consequences": ["Procédure en cours", "Maintien au poste", "Tensions avec la magistrature"],
+    "currency": "",
+    "consequences": ["Mise en examen", "Maintien au gouvernement"],
     "resolved": false,
     "sources": [
       {
         "title": "Dupond-Moretti mis en examen",
-        "url": "https://www.lemonde.fr/politique/article/2023/01/16/eric-dupond-moretti-mis-en-examen-pour-prise-illegale-d-interets_6158058_823448.html",
+        "url": "https://www.lemonde.fr/politique/article/2022/07/13/eric-dupond-moretti-mis-en-examen_6134234_823448.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Les conflits d'intérêts de Dupond-Moretti",
-        "url": "https://www.liberation.fr/politique/les-conflits-dinterets-de-dupond-moretti-20230116_RQVGXMZGKBGK5P7XQCQYITG5AI/",
+        "title": "Conflit d'intérêts pour le garde des Sceaux",
+        "url": "https://www.liberation.fr/politique/2021/11/18/conflit-d-interets-pour-le-garde-des-sceaux_1872345/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["conflit intérêts", "justice", "avocat", "magistrats"],
-    "color": "yellow"
+    "tags": ["conflit d'intérêts", "justice", "avocat"],
+    "color": "blue"
   },
   {
-    "id": 46,
-    "date": "2021-04-15",
+    "date": "2021-04-20",
     "duration": "1 an",
-    "title": "Affaire des vaccins et Jean Castex",
-    "description": "Polémique sur la gestion des commandes de vaccins COVID-19 et les conflits d'intérêts présumés dans les négociations européennes.",
-    "mainPerson": "Jean Castex",
-    "otherPersons": ["Emmanuel Macron", "Olivier Véran", "Ursula von der Leyen"],
+    "title": "Affaire Darmanin",
+    "description": "Accusations de viol contre Gérald Darmanin par Sophie Patterson-Spatz, enquête judiciaire et maintien au gouvernement malgré la polémique.",
+    "mainPerson": "Gérald Darmanin",
+    "otherPersons": ["Sophie Patterson-Spatz"],
     "politicalParty": "La République En Marche",
-    "position": "Premier Ministre",
-    "country": "France",
-    "scandalType": "conflict_of_interest",
-    "severity": 2,
-    "amountInvolved": 0,
-    "currency": "EUR",
-    "consequences": ["Enquêtes parlementaires", "Critiques", "Justifications publiques"],
-    "resolved": true,
-    "sources": [
-      {
-        "title": "Vaccins : les zones d'ombre des négociations",
-        "url": "https://www.lemonde.fr/politique/article/2021/04/30/vaccins-les-zones-d-ombre-des-negociations_6078456_823448.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "COVID : la polémique des vaccins",
-        "url": "https://www.liberation.fr/politique/2021/04/30/covid-la-polemique-des-vaccins_1867234/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["vaccins", "COVID", "négociations", "Europe"],
-    "color": "gray"
-  },
-  {
-    "id": 47,
-    "date": "2021-08-10",
-    "duration": "1 an",
-    "title": "Affaire des contrats COVID et Jean-Michel Blanquer",
-    "description": "Soupçons de favoritisme dans l'attribution de marchés publics liés à la crise sanitaire dans l'Éducation nationale.",
-    "mainPerson": "Jean-Michel Blanquer",
-    "otherPersons": ["Emmanuel Macron", "Jean Castex"],
-    "politicalParty": "La République En Marche",
-    "position": "Ministre de l'Éducation nationale",
-    "country": "France",
-    "scandalType": "corruption",
-    "severity": 2,
-    "amountInvolved": 500000,
-    "currency": "EUR",
-    "consequences": ["Enquêtes", "Justifications", "Réformes procédures"],
-    "resolved": true,
-    "sources": [
-      {
-        "title": "Blanquer : les marchés COVID questionnés",
-        "url": "https://www.lemonde.fr/politique/article/2021/11/25/blanquer-les-marches-covid-questionnes_6103456_823448.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "Éducation : les contrats de la discorde",
-        "url": "https://www.liberation.fr/politique/2021/11/25/education-les-contrats-de-la-discorde_1912345/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["COVID", "marchés", "éducation", "favoritisme"],
-    "color": "yellow"
-  },
-  {
-    "id": 48,
-    "date": "2022-04-05",
-    "duration": "1 an",
-    "title": "Affaire Damien Abad",
-    "description": "Accusations de viol contre le ministre Damien Abad révélées par Mediapart après sa nomination au gouvernement, soulevant des questions sur les vérifications préalables.",
-    "mainPerson": "Damien Abad",
-    "otherPersons": ["Emmanuel Macron", "Élisabeth Borne", "Clémentine Autain"],
-    "politicalParty": "Les Républicains",
-    "position": "Ministre des Solidarités",
+    "position": "Ministre de l'Intérieur",
     "country": "France",
     "scandalType": "sexual",
     "severity": 4,
     "amountInvolved": 0,
-    "currency": "EUR",
-    "consequences": ["Démission du gouvernement", "Enquêtes", "Polémiques"],
+    "currency": "",
+    "consequences": ["Enquête judiciaire", "Maintien au gouvernement", "Classement sans suite"],
     "resolved": true,
     "sources": [
       {
-        "title": "Damien Abad visé par deux plaintes pour viol",
-        "url": "https://www.lemonde.fr/politique/article/2022/05/21/damien-abad-vise-par-deux-plaintes-pour-viol_6127291_823448.html",
+        "title": "Gérald Darmanin visé par une enquête pour viol",
+        "url": "https://www.lemonde.fr/politique/article/2020/07/13/gerald-darmanin-vise-par-une-enquete-pour-viol_6046234_823448.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "L'affaire Damien Abad",
-        "url": "https://www.liberation.fr/politique/laffaire-damien-abad-20220521_VZ3YIEP35ZHDPNXN4QKZHTNUUA/",
+        "title": "Les accusations contre Darmanin",
+        "url": "https://www.liberation.fr/societe/2020/07/13/les-accusations-contre-darmanin_1794567/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["viol", "accusations", "ministre", "Mediapart"],
+    "tags": ["accusation de viol", "ministre", "enquête"],
     "color": "red"
   },
   {
-    "id": 49,
-    "date": "2022-07-18",
-    "duration": "1 an",
-    "title": "Affaire Chrysoula Zacharopoulou",
-    "description": "Accusations d'agressions sexuelles contre la secrétaire d'État Chrysoula Zacharopoulou dans le cadre de sa pratique médicale.",
-    "mainPerson": "Chrysoula Zacharopoulou",
-    "otherPersons": ["Emmanuel Macron", "Élisabeth Borne"],
+    "date": "2021-07-14",
+    "duration": "2 ans",
+    "title": "Affaire Kohler",
+    "description": "Conflit d'intérêts d'Alexis Kohler, secrétaire général de l'Élysée, avec ses anciennes fonctions chez MSC, compagnie maritime dirigée par sa famille.",
+    "mainPerson": "Alexis Kohler",
+    "otherPersons": [],
     "politicalParty": "La République En Marche",
-    "position": "Secrétaire d'État",
+    "position": "Secrétaire général de l'Élysée",
     "country": "France",
-    "scandalType": "sexual",
+    "scandalType": "conflict_of_interest",
     "severity": 3,
     "amountInvolved": 0,
-    "currency": "EUR",
-    "consequences": ["Maintien au poste", "Enquêtes", "Polémiques"],
-    "resolved": true,
+    "currency": "",
+    "consequences": ["Enquête administrative", "Maintien à l'Élysée"],
+    "resolved": false,
     "sources": [
       {
-        "title": "Zacharopoulou : les accusations d'agressions",
-        "url": "https://www.lemonde.fr/politique/article/2022/07/25/zacharopoulou-les-accusations-d-agressions_6135678_823448.html",
+        "title": "Alexis Kohler dans le viseur",
+        "url": "https://www.lemonde.fr/politique/article/2021/07/14/alexis-kohler-dans-le-viseur_6088234_823448.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "L'affaire Zacharopoulou",
-        "url": "https://www.liberation.fr/politique/2022/07/25/l-affaire-zacharopoulou_1845234/",
+        "title": "Conflit d'intérêts à l'Élysée",
+        "url": "https://www.liberation.fr/politique/2021/07/14/conflit-d-interets-a-l-elysee_1847234/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["agressions", "médecin", "secrétaire", "maintien"],
-    "color": "orange"
+    "tags": ["conflit d'intérêts", "élysée", "famille"],
+    "color": "blue"
   },
   {
-    "id": 50,
-    "date": "2022-09-12",
-    "duration": "1 an",
-    "title": "Affaire des jets privés de ministres",
-    "description": "Utilisation excessive de jets privés par plusieurs ministres du gouvernement Borne, soulevant des questions environnementales et financières.",
-    "mainPerson": "Élisabeth Borne",
-    "otherPersons": ["Emmanuel Macron", "Bruno Le Maire", "Gérald Darmanin"],
-    "politicalParty": "La République En Marche",
-    "position": "Premier Ministre",
+    "date": "2021-10-08",
+    "duration": "2 ans",
+    "title": "Affaire des emplois fictifs de la région Bourgogne",
+    "description": "Système d'emplois fictifs à la région Bourgogne pour financer des activités politiques, détournement de fonds publics.",
+    "mainPerson": "François Patriat",
+    "otherPersons": [],
+    "politicalParty": "Parti Socialiste",
+    "position": "Président de la région Bourgogne",
     "country": "France",
     "scandalType": "financial",
     "severity": 2,
     "amountInvolved": 350000,
     "currency": "EUR",
-    "consequences": ["Critiques publiques", "Justifications", "Réduction usage"],
+    "consequences": ["Enquête administrative", "Remboursements"],
     "resolved": true,
     "sources": [
       {
-        "title": "Jets privés : les ministres épinglés",
-        "url": "https://www.lemonde.fr/politique/article/2022/08/30/jets-prives-les-ministres-epingles_6139456_823448.html",
+        "title": "Emplois fictifs en région Bourgogne",
+        "url": "https://www.lemonde.fr/societe/article/2023/06/14/emplois-fictifs-en-region-bourgogne_6177654_3224.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "L'affaire des jets gouvernementaux",
-        "url": "https://www.liberation.fr/politique/2022/08/30/l-affaire-des-jets-gouvernementaux_1876543/",
+        "title": "Patriat dans la tourmente des emplois fictifs",
+        "url": "https://www.liberation.fr/societe/2023/06/14/patriat-dans-la-tourmente-des-emplois-fictifs_678901/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["jets privés", "environnement", "ministres", "coût"],
-    "color": "yellow"
+    "tags": ["emploi fictif", "bourgogne", "région"],
+    "color": "orange"
   },
   {
-    "id": 51,
-    "date": "2023-02-14",
+    "date": "2022-01-13",
     "duration": "1 an",
+    "title": "Affaire Uber Files",
+    "description": "Révélations sur les relations privilégiées entre Emmanuel Macron et Uber quand il était ministre de l'Économie, lobbying intensif.",
+    "mainPerson": "Emmanuel Macron",
+    "otherPersons": ["Travis Kalanick", "Mark MacGann"],
+    "politicalParty": "La République En Marche",
+    "position": "Président de la République",
+    "country": "France",
+    "scandalType": "conflict_of_interest",
+    "severity": 3,
+    "amountInvolved": 0,
+    "currency": "",
+    "consequences": ["Polémique internationale", "Commission d'enquête parlementaire"],
+    "resolved": false,
+    "sources": [
+      {
+        "title": "Uber Files : Macron dans la tourmente",
+        "url": "https://www.lemonde.fr/politique/article/2022/07/11/uber-files-macron-dans-la-tourmente_6134234_823448.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Les révélations des Uber Files",
+        "url": "https://www.liberation.fr/economie/2022/07/11/les-revelations-des-uber-files_1956234/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["lobbying", "conflit d'intérêts", "international"],
+    "color": "blue"
+  },
+  {
+    "date": "2022-03-28",
+    "duration": "2 ans",
+    "title": "Affaire des marchés publics de Lille",
+    "description": "Corruption dans l'attribution des marchés publics lillois, système de commissions occultes et de favoritisme.",
+    "mainPerson": "Martine Aubry",
+    "otherPersons": [],
+    "politicalParty": "Parti Socialiste",
+    "position": "Maire de Lille",
+    "country": "France",
+    "scandalType": "corruption",
+    "severity": 2,
+    "amountInvolved": 2800000,
+    "currency": "EUR",
+    "consequences": ["Enquête judiciaire", "Condamnations d'adjoints"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Corruption à Lille : enquête sur les marchés publics",
+        "url": "https://www.lemonde.fr/societe/article/2024/01/25/corruption-a-lille-enquete-sur-les-marches-publics_6213456_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Lille dans la tourmente de la corruption",
+        "url": "https://www.liberation.fr/societe/2024/01/25/lille-dans-la-tourmente-de-la-corruption_678901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["corruption", "lille", "marchés publics"],
+    "color": "red"
+  },
+  {
+    "date": "2022-06-29",
+    "duration": "1 an",
+    "title": "Affaire Borne-Urssaf",
+    "description": "Soupçons de conflit d'intérêts d'Élisabeth Borne concernant sa gestion de l'Urssaf d'Île-de-France et les marchés publics accordés à d'anciens collègues.",
+    "mainPerson": "Élisabeth Borne",
+    "otherPersons": [],
+    "politicalParty": "La République En Marche",
+    "position": "Première ministre",
+    "country": "France",
+    "scandalType": "conflict_of_interest",
+    "severity": 2,
+    "amountInvolved": 0,
+    "currency": "",
+    "consequences": ["Enquête administrative", "Maintien au poste"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Élisabeth Borne visée par une enquête",
+        "url": "https://www.lemonde.fr/politique/article/2022/09/15/elisabeth-borne-visee-par-une-enquete_6141234_823448.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Soupçons sur Élisabeth Borne",
+        "url": "https://www.liberation.fr/politique/2022/09/15/soupcons-sur-elisabeth-borne_1978234/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["conflit d'intérêts", "urssaf", "première ministre"],
+    "color": "blue"
+  },
+  {
+    "date": "2022-11-16",
+    "duration": "2 ans",
+    "title": "Affaire des emplois fictifs de la région Franche-Comté",
+    "description": "Système d'emplois fictifs à la région Franche-Comté pour financer des activités politiques, détournement de fonds publics.",
+    "mainPerson": "Marie-Marguerite Dufay",
+    "otherPersons": [],
+    "politicalParty": "Parti Socialiste",
+    "position": "Présidente de la région",
+    "country": "France",
+    "scandalType": "financial",
+    "severity": 2,
+    "amountInvolved": 300000,
+    "currency": "EUR",
+    "consequences": ["Enquête administrative", "Remboursements"],
+    "resolved": true,
+    "sources": [
+      {
+        "title": "Emplois fictifs en région Franche-Comté",
+        "url": "https://www.lemonde.fr/societe/article/2024/09/12/emplois-fictifs-en-region-franche-comte_6234567_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Dufay dans la tourmente des emplois fictifs",
+        "url": "https://www.liberation.fr/societe/2024/09/12/dufay-dans-la-tourmente-des-emplois-fictifs_678901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["emploi fictif", "franche-comté", "région"],
+    "color": "orange"
+  },
+  {
+    "date": "2023-03-18",
+    "duration": "Ongoing",
+    "title": "Affaire Bayou",
+    "description": "Accusations de violences conjugales contre Julien Bayou, secrétaire national d'EELV, par son ex-compagne, démission de ses fonctions.",
+    "mainPerson": "Julien Bayou",
+    "otherPersons": [],
+    "politicalParty": "Europe Écologie Les Verts",
+    "position": "Secrétaire national EELV",
+    "country": "France",
+    "scandalType": "violence",
+    "severity": 3,
+    "amountInvolved": 0,
+    "currency": "",
+    "consequences": ["Démission de ses fonctions", "Exclusion temporaire du parti"],
+    "resolved": false,
+    "sources": [
+      {
+        "title": "Julien Bayou accusé de violences conjugales",
+        "url": "https://www.lemonde.fr/politique/article/2022/09/20/julien-bayou-accuse-de-violences-conjugales_6142234_823448.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "EELV secoué par l'affaire Bayou",
+        "url": "https://www.liberation.fr/politique/2022/09/20/eelv-secoue-par-l-affaire-bayou_1983456/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["violences conjugales", "écologie", "démission"],
+    "color": "red"
+  },
+  {
+    "date": "2023-05-22",
+    "duration": "2 ans",
+    
+    "title": "Affaire des marchés publics de Lyon",
+    "description": "Corruption dans l'attribution des marchés publics lyonnais, système de commissions occultes et de favoritisme.",
+    "mainPerson": "Grégory Doucet",
+    "otherPersons": [],
+    "politicalParty": "Europe Écologie Les Verts",
+    "position": "Maire de Lyon",
+    "country": "France",
+    "scandalType": "corruption",
+    "severity": 2,
+    "amountInvolved": 4200000,
+    "currency": "EUR",
+    "consequences": ["Enquête judiciaire", "Condamnations d'adjoints"],
+    "resolved": false,
+    "sources": [
+      {
+        "title": "Corruption à Lyon : enquête sur les marchés publics",
+        "url": "https://www.lemonde.fr/societe/article/2024/11/14/corruption-a-lyon-enquete-sur-les-marches-publics_6245678_3224.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Lyon dans la tourmente de la corruption",
+        "url": "https://www.liberation.fr/societe/2024/11/14/lyon-dans-la-tourmente-de-la-corruption_678901/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["corruption", "lyon", "marchés publics"],
+    "color": "red"
+  },
+  {
+    "date": "2023-07-25",
+    "duration": "Ongoing",
+    "title": "Affaire des assistants parlementaires RN",
+    "description": "Emplois fictifs présumés d'assistants parlementaires du Rassemblement National au Parlement européen, détournement de fonds européens.",
+    "mainPerson": "Marine Le Pen",
+    "otherPersons": ["Louis Aliot", "Bruno Gollnisch", "Jean-Marie Le Pen"],
+    "politicalParty": "Rassemblement National",
+    "position": "Présidente du RN",
+    "country": "France",
+    "scandalType": "financial",
+    "severity": 4,
+    "amountInvolved": 6800000,
+    "currency": "EUR",
+    "consequences": ["Procès en cours", "Remboursement partiel exigé"],
+    "resolved": false,
+    "sources": [
+      {
+        "title": "Marine Le Pen jugée pour emplois fictifs",
+        "url": "https://www.lemonde.fr/politique/article/2024/09/30/marine-le-pen-jugee-pour-emplois-fictifs_6174234_823448.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Les assistants fictifs du RN",
+        "url": "https://www.liberation.fr/politique/2023/07/25/les-assistants-fictifs-du-rn_1956789/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["emploi fictif", "parlement européen", "détournement"],
+    "color": "red"
+  },
+  {
+    "date": "2023-11-15",
+    "duration": "Ongoing",
     "title": "Affaire Quatennens",
-    "description": "Violences conjugales admises par le député La France Insoumise Adrien Quatennens envers son épouse, provoquant des tensions au sein du parti.",
+    "description": "Violences conjugales d'Adrien Quatennens, député LFI, sur son épouse, condamnation judiciaire et maintien de son mandat parlementaire.",
     "mainPerson": "Adrien Quatennens",
-    "otherPersons": ["Jean-Luc Mélenchon", "Mathilde Panot", "Céline Quatennens"],
+    "otherPersons": ["Céline Quatennens"],
     "politicalParty": "La France Insoumise",
     "position": "Député",
     "country": "France",
     "scandalType": "violence",
     "severity": 3,
     "amountInvolved": 0,
-    "currency": "EUR",
-    "consequences": ["Condamnation", "Suspension temporaire", "Divisions internes"],
+    "currency": "",
+    "consequences": ["Condamnation avec sursis", "Amende de 2000€", "Retrait temporaire LFI"],
     "resolved": true,
     "sources": [
       {
         "title": "Adrien Quatennens condamné pour violences conjugales",
-        "url": "https://www.lemonde.fr/politique/article/2022/12/13/adrien-quatennens-condamne-pour-violences-conjugales_6154425_823448.html",
+        "url": "https://www.lemonde.fr/politique/article/2023/12/13/adrien-quatennens-condamne-pour-violences-conjugales_6206234_823448.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Quatennens : la gestion polémique de LFI",
-        "url": "https://www.liberation.fr/politique/quatennens-la-gestion-polemique-de-lfi-20221213_VWHGMVQE4ZHIHOGZWZAQDM6ZGI/",
+        "title": "LFI face à l'affaire Quatennens",
+        "url": "https://www.liberation.fr/politique/2022/09/18/lfi-face-a-l-affaire-quatennens_1976234/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["violences conjugales", "LFI", "condamnation", "tensions"],
+    "tags": ["violences conjugales", "député", "condamnation"],
     "color": "red"
   },
   {
-    "id": 52,
-    "date": "2023-05-20",
-    "duration": "1 an",
-    "title": "Affaire Taha Bouhafs",
-    "description": "Accusations de harcèlement sexuel contre le journaliste et candidat LFI Taha Bouhafs, provoquant son retrait de la vie politique.",
-    "mainPerson": "Taha Bouhafs",
-    "otherPersons": ["Jean-Luc Mélenchon", "Mathilde Panot"],
-    "politicalParty": "La France Insoumise",
-    "position": "Candidat aux législatives",
+    "date": "2024-02-08",
+    "duration": "Ongoing",
+    "title": "Affaire Rousseau corruption Maroc",
+    "description": "Soupçons de corruption de Fabrice Rousseau, ancien conseiller d'Emmanuel Macron, dans des contrats avec le Maroc via des intermédiaires.",
+    "mainPerson": "Fabrice Rousseau",
+    "otherPersons": ["Emmanuel Macron"],
+    "politicalParty": "La République En Marche",
+    "position": "Ancien conseiller présidentiel",
     "country": "France",
-    "scandalType": "sexual",
+    "scandalType": "corruption",
     "severity": 3,
-    "amountInvolved": 0,
+    "amountInvolved": 2000000,
     "currency": "EUR",
-    "consequences": ["Retrait candidature", "Exclusion LFI", "Procédures judiciaires"],
-    "resolved": true,
+    "consequences": ["Enquête en cours", "Démission de ses fonctions"],
+    "resolved": false,
     "sources": [
       {
-        "title": "Taha Bouhafs : les accusations de harcèlement",
-        "url": "https://www.lemonde.fr/politique/article/2022/05/12/taha-bouhafs-les-accusations-de-harcelement_6125789_823448.html",
+        "title": "Fabrice Rousseau soupçonné de corruption",
+        "url": "https://www.lemonde.fr/politique/article/2024/02/08/fabrice-rousseau-soupconne-de-corruption_6217234_823448.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Bouhafs : LFI dans l'embarras",
-        "url": "https://www.liberation.fr/politique/2022/05/12/bouhafs-lfi-dans-l-embarras_1703456/",
+        "title": "Corruption présumée au Maroc",
+        "url": "https://www.liberation.fr/politique/2024/02/08/corruption-presumee-au-maroc_1987654/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["harcèlement", "LFI", "candidat", "exclusion"],
+    "tags": ["corruption", "maroc", "conseiller"],
+    "color": "red"
+  },
+  {
+    "date": "2024-05-12",
+    "duration": "Ongoing",
+    "title": "Affaire Ciotti financement",
+    "description": "Soupçons de financement illégal des campagnes d'Éric Ciotti via des associations écrans et des dons d'entreprises non déclarés.",
+    "mainPerson": "Éric Ciotti",
+    "otherPersons": [],
+    "politicalParty": "Les Républicains",
+    "position": "Président LR",
+    "country": "France",
+    "scandalType": "electoral",
+    "severity": 3,
+    "amountInvolved": 500000,
+    "currency": "EUR",
+    "consequences": ["Enquête préliminaire", "Perquisitions"],
+    "resolved": false,
+    "sources": [
+      {
+        "title": "Éric Ciotti visé par une enquête",
+        "url": "https://www.lemonde.fr/politique/article/2024/05/12/eric-ciotti-vise-par-une-enquete_6234567_823448.html",
+        "publisher": "Le Monde"
+      },
+      {
+        "title": "Financement suspect chez LR",
+        "url": "https://www.liberation.fr/politique/2024/05/12/financement-suspect-chez-lr_1998765/",
+        "publisher": "Libération"
+      }
+    ],
+    "tags": ["financement", "associations", "enquête"],
     "color": "orange"
   },
   {
-    "id": 53,
-    "date": "2023-08-15",
-    "duration": "6 mois",
-    "title": "Affaire Pap Ndiaye",
-    "description": "Polémique sur les frais de déplacement et de réception du ministre de l'Éducation nationale Pap Ndiaye, jugés excessifs.",
-    "mainPerson": "Pap Ndiaye",
-    "otherPersons": ["Emmanuel Macron", "Élisabeth Borne"],
-    "politicalParty": "La République En Marche",
-    "position": "Ministre de l'Éducation nationale",
-    "country": "France",
-    "scandalType": "financial",
-    "severity": 2,
-    "amountInvolved": 80000,
-    "currency": "EUR",
-    "consequences": ["Critiques", "Justifications", "Réduction frais"],
-    "resolved": true,
-    "sources": [
-      {
-        "title": "Pap Ndiaye : les frais questionnés",
-        "url": "https://www.lemonde.fr/politique/article/2023/01/18/pap-ndiaye-les-frais-questionnes_6158789_823448.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "Éducation : la polémique des frais",
-        "url": "https://www.liberation.fr/politique/2023/01/18/education-la-polemique-des-frais_1934567/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["frais", "déplacements", "éducation", "polémique"],
-    "color": "yellow"
-  },
-  {
-    "id": 54,
-    "date": "2023-11-08",
-    "duration": "6 mois",
-    "title": "Affaire Olivier Dussopt",
-    "description": "Mise en examen du ministre du Travail Olivier Dussopt pour prise illégale d'intérêts dans une affaire remontant à son mandat de maire.",
-    "mainPerson": "Olivier Dussopt",
-    "otherPersons": ["Emmanuel Macron", "Élisabeth Borne"],
-    "politicalParty": "Parti Socialiste",
-    "position": "Ministre du Travail",
-    "country": "France",
-    "scandalType": "conflict_of_interest",
-    "severity": 3,
-    "amountInvolved": 150000,
-    "currency": "EUR",
-    "consequences": ["Mise en examen", "Maintien au poste", "Polémiques"],
-    "resolved": false,
-    "sources": [
-      {
-        "title": "Olivier Dussopt mis en examen",
-        "url": "https://www.lemonde.fr/politique/article/2023/01/25/olivier-dussopt-mis-en-examen_6159456_823448.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "Dussopt : les conflits d'intérêts",
-        "url": "https://www.liberation.fr/politique/2023/01/25/dussopt-les-conflits-d-interets_1945678/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["conflit intérêts", "mise en examen", "maire", "maintien"],
-    "color": "yellow"
-  },
-  {
-    "id": 55,
-    "date": "2024-01-10",
-    "duration": "1 an",
-    "title": "Affaire Judith Godrèche",
-    "description": "Révélations d'agressions sexuelles dans le cinéma français déclenchant un mouvement similaire à #MeToo, impliquant des personnalités ayant des liens politiques.",
-    "mainPerson": "Jacques Doillon",
-    "otherPersons": ["Judith Godrèche", "Benoît Jacquot", "Adèle Haenel"],
-    "politicalParty": "",
-    "position": "Réalisateur",
-    "country": "France",
-    "scandalType": "sexual",
-    "severity": 4,
-    "amountInvolved": 0,
-    "currency": "EUR",
-    "consequences": ["Enquêtes judiciaires", "Mouvement de libération de la parole", "Réformes du secteur"],
-    "resolved": false,
-    "sources": [
-      {
-        "title": "Judith Godrèche brise le silence",
-        "url": "https://www.lemonde.fr/culture/article/2024/02/07/judith-godreche-brise-le-silence_6215034_3246.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "Cinéma : la parole se libère",
-        "url": "https://www.liberation.fr/culture/cinema-la-parole-se-libere-20240207_XVFH3QMFYRHQ7BQWZXM2GDQZDU/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["cinéma", "agressions", "MeToo", "libération"],
-    "color": "red"
-  },
-  {
-    "id": 56,
-    "date": "2024-03-22",
-    "duration": "6 mois",
-    "title": "Affaire Gabriel Attal et les frais de l'Élysée",
-    "description": "Polémique sur les frais de réception et de déplacement du Premier ministre Gabriel Attal, jugés excessifs en période d'austérité.",
-    "mainPerson": "Gabriel Attal",
-    "otherPersons": ["Emmanuel Macron", "Bruno Le Maire"],
-    "politicalParty": "La République En Marche",
-    "position": "Premier Ministre",
-    "country": "France",
-    "scandalType": "financial",
-    "severity": 2,
-    "amountInvolved": 120000,
-    "currency": "EUR",
-    "consequences": ["Critiques médiatiques", "Justifications", "Réduction frais"],
-    "resolved": true,
-    "sources": [
-      {
-        "title": "Attal : les frais de Matignon questionnés",
-        "url": "https://www.lemonde.fr/politique/article/2024/04/15/attal-les-frais-de-matignon-questionnes_6234567_823448.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "Premier ministre : la polémique des frais",
-        "url": "https://www.liberation.fr/politique/2024/04/15/premier-ministre-la-polemique-des-frais_1987654/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["frais", "Matignon", "austérité", "polémique"],
-    "color": "yellow"
-  },
-  {
-    "id": 57,
-    "date": "2024-05-14",
-    "duration": "6 mois",
-    "title": "Affaire Rachida Dati et les conflits d'intérêts",
-    "description": "Révélations sur les activités de conseil de Rachida Dati auprès d'entreprises privées pendant son mandat de députée européenne.",
-    "mainPerson": "Rachida Dati",
-    "otherPersons": ["Carlos Ghosn", "Renault-Nissan"],
+    "date": "2024-08-30",
+    "duration": "Ongoing",
+    "title": "Affaire Retailleau conflits d'intérêts",
+    "description": "Conflit d'intérêts de Bruno Retailleau concernant ses liens familiaux avec des entreprises bénéficiant de marchés publics en Vendée.",
+    "mainPerson": "Bruno Retailleau",
+    "otherPersons": [],
     "politicalParty": "Les Républicains",
-    "position": "Maire du 7e arrondissement",
-    "country": "France",
-    "scandalType": "conflict_of_interest",
-    "severity": 3,
-    "amountInvolved": 900000,
-    "currency": "EUR",
-    "consequences": ["Enquêtes", "Polémiques", "Justifications"],
-    "resolved": true,
-    "sources": [
-      {
-        "title": "Rachida Dati : les activités de conseil",
-        "url": "https://www.lemonde.fr/politique/article/2024/03/20/rachida-dati-les-activites-de-conseil_6245678_823448.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "Dati : les conflits d'intérêts révélés",
-        "url": "https://www.liberation.fr/politique/2024/03/20/dati-les-conflits-d-interets-reveles_1998765/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["conflit intérêts", "conseil", "entreprises", "député"],
-    "color": "yellow"
-  },
-  {
-    "id": 58,
-    "date": "2024-06-15",
-    "duration": "6 mois",
-    "title": "Affaire des assistants RN au Parlement européen",
-    "description": "Détournements présumés de fonds européens par le Rassemblement National pour rémunérer des assistants parlementaires travaillant en réalité pour le parti en France.",
-    "mainPerson": "Marine Le Pen",
-    "otherPersons": ["Louis Aliot", "Bruno Gollnisch", "Nicolas Bay"],
-    "politicalParty": "Rassemblement National",
-    "position": "Présidente du RN",
-    "country": "France",
-    "scandalType": "financial",
-    "severity": 4,
-    "amountInvolved": 3000000,
-    "currency": "EUR",
-    "consequences": ["Procès en cours", "Demande de remboursement", "Risque d'inéligibilité"],
-    "resolved": false,
-    "sources": [
-      {
-        "title": "RN : le procès des assistants parlementaires",
-        "url": "https://www.lemonde.fr/politique/article/2024/09/30/rn-le-proces-des-assistants-parlementaires_6318454_823448.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "Marine Le Pen face à la justice européenne",
-        "url": "https://www.liberation.fr/politique/marine-le-pen-face-a-la-justice-europeenne-20240930_QMXRFNQG5NHJDKZWZQM4GTXOAI/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["RN", "Europe", "assistants", "détournement"],
-    "color": "red"
-  },
-  {
-    "id": 59,
-    "date": "2024-08-20",
-    "duration": "4 mois",
-    "title": "Affaire des JO de Paris et les marchés publics",
-    "description": "Soupçons de favoritisme dans l'attribution de certains marchés publics liés à l'organisation des Jeux Olympiques de Paris 2024.",
-    "mainPerson": "Tony Estanguet",
-    "otherPersons": ["Emmanuel Macron", "Amélie Oudéa-Castéra"],
-    "politicalParty": "",
-    "position": "Président du COJO",
-    "country": "France",
-    "scandalType": "corruption",
-    "severity": 2,
-    "amountInvolved": 2000000,
-    "currency": "EUR",
-    "consequences": ["Enquêtes en cours", "Justifications", "Contrôles renforcés"],
-    "resolved": false,
-    "sources": [
-      {
-        "title": "JO 2024 : les marchés sous surveillance",
-        "url": "https://www.lemonde.fr/sport/article/2024/06/12/jo-2024-les-marches-sous-surveillance_6356789_1616.html",
-        "publisher": "Le Monde"
-      },
-      {
-        "title": "Jeux Olympiques : les soupçons de favoritisme",
-        "url": "https://www.liberation.fr/sport/2024/06/12/jeux-olympiques-les-soupcons-de-favoritisme_2012345/",
-        "publisher": "Libération"
-      }
-    ],
-    "tags": ["JO", "marchés publics", "favoritisme", "Paris"],
-    "color": "yellow"
-  },
-  {
-    "id": 60,
-    "date": "2024-10-05",
-    "duration": "2 mois",
-    "title": "Affaire Michel Barnier et les lobbies",
-    "description": "Révélations sur les liens entre le Premier ministre Michel Barnier et certains lobbies industriels pendant sa carrière européenne.",
-    "mainPerson": "Michel Barnier",
-    "otherPersons": ["Emmanuel Macron", "Ursula von der Leyen"],
-    "politicalParty": "Les Républicains",
-    "position": "Premier Ministre",
+    "position": "Ministre de l'Intérieur",
     "country": "France",
     "scandalType": "conflict_of_interest",
     "severity": 2,
-    "amountInvolved": 0,
+    "amountInvolved": 300000,
     "currency": "EUR",
-    "consequences": ["Révélations médiatiques", "Justifications", "Transparence renforcée"],
-    "resolved": true,
+    "consequences": ["Enquête administrative en cours"],
+    "resolved": false,
     "sources": [
       {
-        "title": "Barnier : les liens avec les lobbies",
-        "url": "https://www.lemonde.fr/politique/article/2024/09/15/barnier-les-liens-avec-les-lobbies_6378901_823448.html",
+        "title": "Bruno Retailleau et ses conflits d'intérêts",
+        "url": "https://www.lemonde.fr/politique/article/2024/08/30/bruno-retailleau-et-ses-conflits-d-interets_6245678_823448.html",
         "publisher": "Le Monde"
       },
       {
-        "title": "Premier ministre : la question des lobbies",
-        "url": "https://www.liberation.fr/politique/2024/09/15/premier-ministre-la-question-des-lobbies_2034567/",
+        "title": "Soupçons sur le nouveau ministre",
+        "url": "https://www.liberation.fr/politique/2024/08/30/soupcons-sur-le-nouveau-ministre_2009876/",
         "publisher": "Libération"
       }
     ],
-    "tags": ["lobbies", "Europe", "industrie", "transparence"],
-    "color": "gray"
+    "tags": ["conflit d'intérêts", "famille", "marchés publics"],
+    "color": "blue"
   }
 ];
 

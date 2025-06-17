@@ -4,7 +4,7 @@ import { PoliticalScandal } from '../types/scandal';
 // Exemple de données de scandales
 export const exampleScandals: PoliticalScandal[] = [
   {
-    id: 1,
+   // id: 1,
     date: "2023-01-15",
     duration: "6 mois",
     title: "Affaire des écoutes illégales",
@@ -22,7 +22,7 @@ export const exampleScandals: PoliticalScandal[] = [
     color: "gray"
   },
   {
-    id: 2,
+  //  id: 2,
     date: "2023-03-20",
     duration: "1 an",
     title: "Scandale des marchés publics",
@@ -42,7 +42,7 @@ export const exampleScandals: PoliticalScandal[] = [
     color: "red"
   },
   {
-    id: 3,
+ //   id: 3,
     date: "2023-06-10",
     duration: "3 mois",
     title: "Affaire des notes de frais",
@@ -66,7 +66,7 @@ export const exampleScandals: PoliticalScandal[] = [
 // Fonction pour créer un nouveau scandale
 export const createScandal = (data: Partial<PoliticalScandal>): PoliticalScandal => {
   return {
-    id:5,
+  //  id:5,
     date: data.date || new Date().toISOString(),
     title: data.title || 'Nouveau scandale',
     description: data.description || 'Description à venir',
