@@ -136,27 +136,29 @@ const SerpentineTimeline: React.FC<SerpentineTimelineProps> = ({
         onClick={() => onScandalClick(scandal)}
         title={`Cliquez pour voir les détails de ${scandal.title}`}
       >
-        {/* Point sur la ligne */}
-        <div
-          className={`timeline-event-point color-${scandal.color}`}
-          style={{
-            position: 'absolute',
-            left: '50%',
-            transform: 'translateX(-50%)',
-            zIndex: 2,
-            width: 32,
-            height: 32,
-            borderRadius: '50%',
-            background: 'var(--timeline-point-bg)',
-            boxShadow: '0 4px 24px 0 rgba(0,0,0,0.18), 0 0 0 6px rgba(255,255,255,0.18)',
-            border: '3px solid rgba(255,255,255,0.45)',
-            backdropFilter: 'blur(4px)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            transition: 'box-shadow 0.2s',
-          }}
-        />
+        {/* Point sur la ligne sauf pour la dernière carte */}
+        {index !== scandals.length - 1 && (
+          <div
+            className={`timeline-event-point color-${scandal.color}`}
+            style={{
+              position: 'absolute',
+              left: '50%',
+              transform: 'translateX(-50%)',
+              zIndex: 2,
+              width: 32,
+              height: 32,
+              borderRadius: '50%',
+              background: 'var(--timeline-point-bg)',
+              boxShadow: '0 4px 24px 0 rgba(0,0,0,0.18), 0 0 0 6px rgba(255,255,255,0.18)',
+              border: '3px solid rgba(255,255,255,0.45)',
+              backdropFilter: 'blur(4px)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              transition: 'box-shadow 0.2s',
+            }}
+          />
+        )}
         <div className="timeline-content">
           <div className="timeline-date">{formatDate(scandal.date, 'full')}</div>
           <div className="timeline-title">{scandal.title}</div>
