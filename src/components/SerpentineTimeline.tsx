@@ -66,33 +66,8 @@ const SerpentineTimeline: React.FC<SerpentineTimelineProps> = ({
     setSelectedPerson('');
   };
   
-  // Créer le SVG de la ligne serpentine - CENTRALE et VISIBLE
-  const createSerpentinePath = (itemCount: number) => {
-    const height = itemCount * 120 + 100;
-    const centerX = 50; // Centre à 50% du viewBox
-    const amplitude = 25; // Amplitude des courbes (25% vers chaque côté)
-    
-    let path = `M ${centerX} 60`; // Point de départ
-    
-    for (let i = 0; i < itemCount - 1; i++) {
-      const currentY = 60 + (i * 120);
-      const nextY = currentY + 120;
-      const midY = currentY + 60;
-      
-      // Alternance des courbes
-      if (i % 2 === 0) {
-        // Courbe vers la droite puis retour au centre
-        path += ` Q ${centerX + amplitude} ${midY} ${centerX} ${nextY}`;
-      } else {
-        // Courbe vers la gauche puis retour au centre  
-        path += ` Q ${centerX - amplitude} ${midY} ${centerX} ${nextY}`;
-      }
-    }
-    
-    return { path, height };
-  };
-
-  const { path: serpentinePath, height: svgHeight } = createSerpentinePath(scandals.length);
+  // Ligne verticale simple
+  const lineHeight = scandals.length * 120 + 100;
 
   const getSeverityClass = (severity: number): string => {
     return `severity-${severity}`;
@@ -161,6 +136,27 @@ const SerpentineTimeline: React.FC<SerpentineTimelineProps> = ({
         onClick={() => onScandalClick(scandal)}
         title={`Cliquez pour voir les détails de ${scandal.title}`}
       >
+        {/* Point sur la ligne */}
+        <div
+          className={`timeline-event-point color-${scandal.color}`}
+          style={{
+            position: 'absolute',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            zIndex: 2,
+            width: 32,
+            height: 32,
+            borderRadius: '50%',
+            background: 'var(--timeline-point-bg)',
+            boxShadow: '0 4px 24px 0 rgba(0,0,0,0.18), 0 0 0 6px rgba(255,255,255,0.18)',
+            border: '3px solid rgba(255,255,255,0.45)',
+            backdropFilter: 'blur(4px)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: 'box-shadow 0.2s',
+          }}
+        />
         <div className="timeline-content">
           <div className="timeline-date">{formatDate(scandal.date, 'full')}</div>
           <div className="timeline-title">{scandal.title}</div>
@@ -215,49 +211,20 @@ const SerpentineTimeline: React.FC<SerpentineTimelineProps> = ({
 
   return (
     <div className="serpentine-timeline-content">
-      {/* Timeline Container */}
       <div className="timeline-container">
-        {/* Ligne serpentine SVG */}
+        {/* Ligne verticale simple */}
         <svg 
-          className="serpentine-line" 
-          height={svgHeight} 
-          viewBox={`0 0 100 ${svgHeight}`}
-          preserveAspectRatio="none"
-          style={{ width: '100%', height: '100%' }}
+          className="vertical-timeline-line" 
+          height={lineHeight} 
+          width="16" 
+          style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)', top: 0, zIndex: 0 }}
         >
-          <defs>
-            <linearGradient id="frenchFlagRepeating" x1="0%" y1="0%" x2="0%" y2="100%" gradientUnits="objectBoundingBox">
-              <stop offset="0%" stopColor="#0055A4" />
-              <stop offset="16.66%" stopColor="#0055A4" />
-              <stop offset="33.33%" stopColor="#FFFFFF" />
-              <stop offset="50%" stopColor="#FFFFFF" />
-              <stop offset="66.66%" stopColor="#EF4135" />
-              <stop offset="83.33%" stopColor="#EF4135" />
-              <stop offset="100%" stopColor="#0055A4" />
-              <animateTransform
-                attributeName="gradientTransform"
-                type="translate"
-                values={`0,0; 0,${svgHeight * 2}; 0,0`}
-                dur="15s"
-                repeatCount="indefinite"
-              />
-            </linearGradient>
-          </defs>
-          <path
-            d={serpentinePath}
-            stroke="url(#frenchFlagRepeating)"
-            strokeWidth="2"
-            fill="none"
-            strokeLinecap="round"
-            opacity="0.9"
-            style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }}
-          />
+          {/* Ligne SVG retirée, tout est géré par le CSS glassmorphism */}
         </svg>
-
         {/* Éléments de la timeline */}
         {scandals.map((scandal, index) => (
           <TimelineItem
-            key={`${scandal.title}-${index}`}
+            key={scandal.id}
             scandal={scandal}
             index={index}
             onScandalClick={handleScandalClick}
@@ -266,14 +233,12 @@ const SerpentineTimeline: React.FC<SerpentineTimelineProps> = ({
           />
         ))}
       </div>
-
       {/* Modal pour les détails du scandale */}
       <ScandalModal 
         scandal={selectedScandal}
         isOpen={isModalOpen}
         onClose={handleCloseModal}
       />
-
       {/* Modal pour la confirmation de la personne */}
       <PersonFilterConfirmation 
         isOpen={isPersonFilterOpen}
@@ -281,7 +246,6 @@ const SerpentineTimeline: React.FC<SerpentineTimelineProps> = ({
         onConfirm={handlePersonFilterConfirm}
         onCancel={handlePersonFilterCancel}
       />
-
       {/* Modal d'onboarding */}
       <OnboardingModal
         isOpen={showOnboarding}

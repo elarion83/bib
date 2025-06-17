@@ -163,6 +163,13 @@
   transition: all 0.3s ease;
 }
 
+@media (min-width: 768px) {
+  .timeline-item {
+    margin-bottom: 32px;
+    min-height: 56px;
+  }
+}
+
 .timeline-item:hover {
   transform: translateY(-4px);
 }
@@ -617,4 +624,39 @@
     background-position: 75% 25%, 25% 75%;
     transform: translateX(-10px) translateY(-5px);
   }
+}
+
+/* Suppression des styles serpentine inutiles */
+.vertical-timeline-line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  width: 16px;
+  /* Glassmorphism */
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  box-shadow: 0 0 16px 4px rgba(180, 200, 255, 0.18), 0 2px 24px 0 rgba(80, 120, 200, 0.10);
+  border: 2.5px solid rgba(255,255,255,0.35);
+  backdrop-filter: blur(6px);
+  height: 100%;
+}
+
+.timeline-event-point {
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18), 0 0 0 6px rgba(255,255,255,0.18);
+  border: 3px solid rgba(255,255,255,0.45);
+  backdrop-filter: blur(4px);
+  background: var(--timeline-point-bg, #fff);
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.color-red    { --timeline-point-bg: rgba(239,68,68,0.85); }
+.color-orange { --timeline-point-bg: rgba(251,146,60,0.85); }
+.color-yellow { --timeline-point-bg: rgba(253,224,71,0.85); }
+.color-purple { --timeline-point-bg: rgba(168,85,247,0.85); }
+.color-blue   { --timeline-point-bg: rgba(59,130,246,0.85); }
+.color-gray   { --timeline-point-bg: rgba(100,116,139,0.85); }
+
+.timeline-event-point:hover {
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.22), 0 0 0 10px rgba(255,255,255,0.22);
+  filter: brightness(1.08) saturate(1.1);
 } 
